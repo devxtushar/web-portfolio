@@ -9,8 +9,9 @@
   padding: 1em;
   font-size: 1.6em;
   transform: scale(1);
-  transition: transform 0.3s ease;
+  transition: 0.3s ease;
 }
+
 .navli:hover {
   background-color: var(--basecolor);
   border: 1px solid gray;
@@ -18,17 +19,12 @@
 }
 .navli:nth-child(1) {
   padding-left: 3em;
-}
-.navli:hover:nth-child(1) {
   border-top-left-radius: 3em;
   border-bottom-left-radius: 3em;
 }
 
 .navli:nth-child(4) {
   padding-right: 3em;
-}
-
-.navli:hover:nth-child(4) {
   border-top-right-radius: 3em;
   border-bottom-right-radius: 3em;
 }
