@@ -1,10 +1,15 @@
-import "./App.css";
+import Home from "./pages/Home";
+import Nav from "./components/Nav";
+import "./css/Home.css";
+import About from "./pages/About";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-2xl">Hello there !</h1>
-    </div>
+    <>
+      <Nav />
+      <Home />
+      <About />
+    </>
   );
 }
 

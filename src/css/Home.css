@@ -1,0 +1,30 @@
+.navul {
+  border-radius: 3em;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid gray;
+}
+
+.navli {
+  padding: 1em;
+  font-size: 1.6em;
+  transform: scale(1);
+  transition: 0.3s ease;
+}
+
+.navli:hover {
+  background-color: var(--basecolor);
+  border: 1px solid gray;
+  transform: scale(1.1);
+}
+.navli:nth-child(1) {
+  padding-left: 3em;
+  border-top-left-radius: 3em;
+  border-bottom-left-radius: 3em;
+}
+
+.navli:nth-child(4) {
+  padding-right: 3em;
+  border-top-right-radius: 3em;
+  border-bottom-right-radius: 3em;
+}
