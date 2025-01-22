@@ -1,15 +1,13 @@
 import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import "./css/Home.css";
-import About from "./pages/About";
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col gap-20">
       <Nav />
       <Home />
-      <About />
-    </>
+    </div>
   );
 }
 

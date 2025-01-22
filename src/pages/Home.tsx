@@ -1,84 +1,42 @@
-// import Slider from "@ant-design/react-slick";
-
+import { PiHandWavingBold } from "react-icons/pi";
+import { FiArrowUpRight } from "react-icons/fi";
+import { GoDotFill } from "react-icons/go";
 import Works from "./Works";
 
 function Home() {
-  // var settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   showArrows: true,
-  //   speed: 500,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   // responsive: [
-  //   //   {
-  //   //     breakpoint: 1024,
-  //   //     settings: {
-  //   //       slidesToShow: 3,
-  //   //       slidesToScroll: 3,
-  //   //       infinite: true,
-  //   //       dots: true,
-  //   //     },
-  //   //   },
-  //   //   {
-  //   //     breakpoint: 600,
-  //   //     settings: {
-  //   //       slidesToShow: 2,
-  //   //       slidesToScroll: 2,
-  //   //     },
-  //   //   },
-  //   //   {
-  //   //     breakpoint: 480,
-  //   //     settings: {
-  //   //       slidesToShow: 1,
-  //   //       slidesToScroll: 1,
-  //   //     },
-  //   //   },
-  //   // ],
-  // };
   return (
-    <main>
-      <section>
-        <div>
-          <button>Available for opportunities</button>
+    <main className="flex flex-col gap-20">
+      <section className="flex flex-col gap-10 items-center py-20">
+        <div className="flex flex-col items-center">
+          <img
+            src="../images/avatar02-bg-white.png"
+            alt="avatar"
+            className="avatar"
+          />
+          <button style={{ background: "#010101", color: "white" }}>
+            <GoDotFill color="green" size={20} className="pt-1" />
+            Available for opportunities
+          </button>
         </div>
-        <div>
-          <h1>
-            Welcome to <br />
-            my digital humble abode
-          </h1>
-          <h4>
-            I'm a Software Engineer.
-            <br />
-            My interest lies in software development, problem solving.
-          </h4>
+        <div className="flex flex-col gap-5 ">
+          <div className="flex font-serif flex-col items-center">
+            <h1>Welcome to</h1>
+            <h1>my digital humble abode</h1>
+          </div>
+          <div className="flex font-sans flex-col items-center text-gray-500">
+            <h4>I'm a Software Engineer.</h4>
+            <h4>My interest lies in software development, problem solving.</h4>
+          </div>
         </div>
         <div className="flex gap-5">
-          <button>Let's talk</button>
-          <button>Get Template</button>
+          <button>
+            <PiHandWavingBold size={18} />
+            Let's talk
+          </button>
+          <button>
+            Get Template <FiArrowUpRight size={15} />
+          </button>
         </div>
-        {/* <div>
-          <Slider {...settings}>
-            <div>
-              <h3 className="p-10  bg-slate-500">1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-          </Slider>
-        </div> */}
       </section>
       <Works />
     </main>
