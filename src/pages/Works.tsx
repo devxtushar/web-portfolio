@@ -1,11 +1,10 @@
+import CustomTitle from "../components/CustomTitle";
+import { customTitleWorks } from "../utils/JSON";
+
 function Works() {
   return (
     <section>
-      <div>
-        <span>Curated Work</span>
-        <h1>Featured Case Studies</h1>
-        <span>Compilation of case studies that evoke my sense of pride</span>
-      </div>
+      <CustomTitle items={customTitleWorks} />
       <div className="flex flex-wrap gap-10">
         <div className="flex-2 flex-col gap-5 p-15">
           <span>MITHAIWALA . 2024</span>
