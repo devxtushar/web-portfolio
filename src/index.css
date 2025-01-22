@@ -109,9 +109,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 550px) {
   html {
     font-size: 8px;
+  }
+  body {
+    padding: 1em 2em;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 890px) {
+  body {
+    padding: 1em 8em;
   }
 }
