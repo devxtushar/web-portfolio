@@ -39,3 +39,12 @@
   min-width: 200px;
   height: auto;
 }
+
+.avatar {
+  width: 80px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.avatar:hover {
+  scale: 1.6;
+}

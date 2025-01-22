@@ -7,8 +7,13 @@ function Home() {
   return (
     <main className="flex flex-col gap-20">
       <section className="flex flex-col gap-10 items-center py-20">
-        <div>
-          <button>
+        <div className="flex flex-col items-center">
+          <img
+            src="../images/avatar02-bg-white.png"
+            alt="avatar"
+            className="avatar"
+          />
+          <button style={{ background: "#010101", color: "white" }}>
             <GoDotFill color="green" size={20} className="pt-1" />
             Available for opportunities
           </button>
