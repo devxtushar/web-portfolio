@@ -2,6 +2,7 @@ import { PiHandWavingBold } from "react-icons/pi";
 import { FiArrowUpRight } from "react-icons/fi";
 import { GoDotFill } from "react-icons/go";
 import Works from "./Works";
+import Faq from "./Faq";
 
 function Home() {
   return (
@@ -39,6 +40,7 @@ function Home() {
         </div>
       </section>
       <Works />
+      <Faq />
     </main>
   );
 }

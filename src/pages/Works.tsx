@@ -4,7 +4,7 @@ import { customTitleWorks } from "../utils/JSON";
 
 function Works() {
   return (
-    <section className="flex flex-col gap-20">
+    <section className="flex flex-col gap-20 pb-20">
       <CustomTitle items={customTitleWorks} />
       <div className="flex flex-col gap-20 items-center">
         <WorkCard />

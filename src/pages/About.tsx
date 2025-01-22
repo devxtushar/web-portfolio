@@ -5,7 +5,7 @@ function About() {
         <div className="flex-col gap-5">
           <span>About Me</span>
           <h1>Know who am I</h1>
-          <span>My journey in few words</span>
+          <span>My journey in fewwords</span>
           <h5>
             Hello! I’m a results-driven Software Engineer with over 3 years of
             experience designing and developing high-performance applications.

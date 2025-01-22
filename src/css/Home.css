@@ -48,3 +48,20 @@
 .avatar:hover {
   scale: 1.6;
 }
+.profile {
+  display: block;
+  width: 100%;
+  min-width: 200px;
+  aspect-ratio: 1;
+  border-radius: 1.6em;
+}
+.faq_card {
+  border: 1px solid #a3a2a23a;
+  border-radius: 2em;
+}
+.btn_posi {
+  position: absolute;
+  bottom: 4em;
+  left: 50%;
+  transform: translateX(-50%);
+}
