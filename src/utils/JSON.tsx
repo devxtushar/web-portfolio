@@ -8,3 +8,8 @@ export const customTitleFAQJson = {
   title: "Frequently Asked Questions",
   subtitle: "Your answers await right here",
 };
+export const customTitleExperienceJson = {
+  heading: "My Experiences",
+  title: "Where I've been employed",
+  subtitle: "",
+};

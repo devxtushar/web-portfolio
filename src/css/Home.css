@@ -65,3 +65,12 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  /* border-top: 1px solid #a3a2a23a; */
+  /* border-top-left-radius: 50%;
+  border-top-right-radius: 50%; */
+}

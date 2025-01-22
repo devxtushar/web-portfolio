@@ -3,6 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { GoDotFill } from "react-icons/go";
 import Works from "./Works";
 import Faq from "./Faq";
+import About from "./About";
 
 function Home() {
   return (
@@ -40,6 +41,7 @@ function Home() {
         </div>
       </section>
       <Works />
+      <About />
       <Faq />
     </main>
   );
