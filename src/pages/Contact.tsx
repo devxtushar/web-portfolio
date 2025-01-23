@@ -3,6 +3,7 @@ import { customTitleFAQJson } from "../utils/JSON";
 import CustomTitle from "../components/CustomTitle";
 import { PiHandWavingBold } from "react-icons/pi";
 import Nav from "../components/Nav";
+import { useEffect } from "react";
 
 type Inputs = {
   fullname: string;
@@ -17,6 +18,9 @@ function Contact() {
     formState: { errors },
   } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Nav />
