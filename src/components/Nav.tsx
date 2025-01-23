@@ -10,25 +10,24 @@ export default function Nav() {
   return (
     <nav className="flex flex-row justify-center mt-5">
       <ul className="navul flex flex-wrap">
-        <li className="navli" onClick={() => handleScroll("home")}>
-          <Link to="/"> Home </Link>
-        </li>
-        <li className="navli" onClick={() => handleScroll("work")}>
-          <Link to="/"> Work</Link>
-        </li>
-        <li className="navli navli_hide" onClick={() => handleScroll("about")}>
-          <Link to="/">About</Link>
-        </li>
-        <li className="navli " onClick={() => handleScroll("experience")}>
-          <Link to="/"> Experience </Link>
-        </li>
-        <li className="navli navli_hide" onClick={() => handleScroll("faq")}>
-          <Link to="/"> FAQ </Link>
-        </li>
-
-        <li className="navli">
-          <Link to="/contact">Let's Talk </Link>
-        </li>
+        <Link to="/" className="navli">
+          <li onClick={() => handleScroll("home")}>Home</li>
+        </Link>
+        <Link to="/" className="navli">
+          <li onClick={() => handleScroll("work")}>Work</li>
+        </Link>
+        <Link to="/" className="navli">
+          <li onClick={() => handleScroll("about")}>About</li>
+        </Link>
+        <Link to="/" className="navli navli_hide">
+          <li onClick={() => handleScroll("experience")}>Experience</li>
+        </Link>
+        <Link to="/" className="navli">
+          <li onClick={() => handleScroll("faq")}>FAQ</li>
+        </Link>
+        <Link to="/contact" className="navli">
+          <li>Let's Talk</li>
+        </Link>
       </ul>
     </nav>
   );
