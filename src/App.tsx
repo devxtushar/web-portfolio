@@ -1,23 +1,17 @@
 import Home from "./pages/Home";
-import Nav from "./components/Nav";
 import "./css/Home.css";
-import Works from "./pages/Works";
-import About from "./pages/About";
-import Experience from "./pages/Experience";
-import Faq from "./pages/Faq";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NoPage from "./pages/NoPage";
+import Contact from "./pages/Contact";
 function App() {
   return (
-    <div className="flex flex-col gap-20">
-      <Nav />
-      <main>
-        <Home />
-        <Works />
-        <About />
-        <Experience />
-        <Faq />
-      </main>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

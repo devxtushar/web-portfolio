@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Nav() {
   const handleScroll = (id: any) => {
     const element = document.getElementById(id);
@@ -23,7 +25,10 @@ export default function Nav() {
         <li className="navli navli_hide" onClick={() => handleScroll("faq")}>
           FAQ
         </li>
-        <li className="navli">Let's Talk</li>
+
+        <li className="navli">
+          <Link to="/contact">Let's Talk </Link>
+        </li>
       </ul>
     </nav>
   );
