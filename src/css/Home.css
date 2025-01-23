@@ -6,6 +6,10 @@
   border: 1px solid gray;
 }
 
+.navul.transparent {
+  background: var(--basecolor);
+}
+
 .navli {
   padding: 1em;
   font-size: 1.6em;
@@ -50,9 +54,11 @@
 .avatar:hover {
   scale: 1.6;
 }
+
 .profile {
   display: block;
   width: 100%;
+  max-width: 265px;
   min-width: 200px;
   aspect-ratio: 1;
   border-radius: 1.6em;
@@ -63,9 +69,12 @@
 }
 .btn_posi {
   position: absolute;
-  bottom: 4em;
+  bottom: 0;
+  padding: 2em 1em;
   left: 50%;
   transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
 }
 .experience {
   display: flex;

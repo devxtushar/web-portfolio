@@ -28,13 +28,13 @@ function Contact() {
         <section className="flex flex-col gap-20 py-40">
           <CustomTitle items={customTitleFAQJson} />
           <div className="flex flex-row flex-wrap gap-10">
-            <div className="flex-1 faq_card p-20 ">
+            <div className="flex-1 faq_card p-20">
               <div className="mb-10 text-center">
                 <h1 className="font-serif">
-                  Have any more questions or want to start collaborating?
+                  Have any more questions or want to discuss on project?
                 </h1>
               </div>
-              <div className="relative">
+              <div className="relative flex justify-center">
                 <img
                   src="../images/tusharpic01.webp"
                   alt="devxtushar image"
@@ -46,8 +46,8 @@ function Contact() {
                       <PiHandWavingBold size={18} /> Let's talk
                     </button>
                   </div>
-                  <span className="t5 font-bold">
-                    *Response time is typically around 24 hours
+                  <span className="t6 font-bold text-black font-sans">
+                    *Response time is typically around 24h
                   </span>
                 </div>
               </div>

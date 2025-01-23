@@ -1,12 +1,32 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Nav() {
-  const handleScroll = (id: any) => {
+  const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const handleBgScroll = () => {
+    const nav = document.querySelector(".navul");
+    if (nav) {
+      if (window.scrollY > 0) {
+        nav.classList.add("transparent");
+      } else {
+        nav.classList.remove("transparent");
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleBgScroll);
+    return () => {
+      window.removeEventListener("scroll", handleBgScroll);
+    };
+  }, []);
+
   return (
     <nav className="flex flex-row justify-center mt-5">
       <ul className="navul flex flex-wrap">
