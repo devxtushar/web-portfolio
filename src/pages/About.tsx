@@ -74,15 +74,14 @@ function About() {
               </td>
             </tr>
             <tr>
-              <td></td>
-            </tr>
-            <tr>
               <td>
                 <div className="flex flex-col gap-2 tr_container">
                   <span className="t4 uppercase font-mono tracking-widest">
-                    AIRBNB . 2023
+                    Latest Project
                   </span>
-                  <h1 className="font-serif">Let's know more about me</h1>
+                  <span className="t4 text-gray-400">
+                    Designed key features for embedding in-platform data.
+                  </span>
                 </div>
               </td>
             </tr>
@@ -90,9 +89,17 @@ function About() {
               <td>
                 <div className="flex flex-col gap-2 tr_container">
                   <span className="t4 uppercase font-mono tracking-widest">
-                    AIRBNB . 2023
+                    My Tech Stacks
                   </span>
-                  <h1 className="font-serif">Let's know more about me</h1>
+                  <span className="t4 text-gray-400">
+                    Designed key features for embedding in-platform data.
+                  </span>
+                  <div className="flex flex-row gap-4 justify-between pt-10">
+                    <CustomCardIcon name="JS" />
+                    <CustomCardIcon name="TS" />
+                    <CustomCardIcon name="RN" />
+                    <CustomCardIcon name="GL" />
+                  </div>
                 </div>
               </td>
             </tr>
@@ -100,9 +107,35 @@ function About() {
               <td>
                 <div className="flex flex-col gap-2 tr_container">
                   <span className="t4 uppercase font-mono tracking-widest">
-                    AIRBNB . 2023
+                    My Tech Stacks
                   </span>
-                  <h1 className="font-serif">Let's know more about me</h1>
+                  <span className="t4 text-gray-400">
+                    Designed key features for embedding in-platform data.
+                  </span>
+                  <div className="flex flex-row gap-4 justify-between pt-10">
+                    <CustomCardIcon name="JS" />
+                    <CustomCardIcon name="TS" />
+                    <CustomCardIcon name="RN" />
+                    <CustomCardIcon name="GL" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    My Tech Stacks
+                  </span>
+                  <span className="t4 text-gray-400">
+                    Designed key features for embedding in-platform data.
+                  </span>
+                  <div className="flex flex-row gap-4 justify-between pt-10">
+                    <CustomCardIcon name="JS" />
+                    <CustomCardIcon name="TS" />
+                    <CustomCardIcon name="RN" />
+                    <CustomCardIcon name="GL" />
+                  </div>
                 </div>
               </td>
             </tr>
