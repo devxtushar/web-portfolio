@@ -1,22 +1,21 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import CustomCardIcon from "../components/CustomCardIcon";
-import { customTitleWorks } from "../utils/JSON";
-import CustomTitle from "../components/CustomTitle";
+
 function About() {
   return (
     <section id="about" className="flex flex-col gap-20 pt-40">
-      <CustomTitle items={customTitleWorks} />
       <div className="flex flex-row flex-wrap gap-20">
         <div
           className="flex-1 flex flex-col gap-2"
           style={{ minWidth: "250px" }}
         >
           <span className="t4 uppercase font-mono tracking-widest">
-            AIRBNB . 2023
+            About Me
           </span>
-          <h1 className="font-serif">
-            Curating AR experiences while travelling
-          </h1>
+
+          <h1 className="font-serif">Know who am I</h1>
+
+          <span className="t4">My journey in few words</span>
           <h4 className="text-gray-500 font-sans">
             Hello! I’m a results-driven Software Engineer with over 3 years of
             experience designing and developing high-performance applications.
@@ -29,10 +28,17 @@ function About() {
             in collaborative environments and am always eager to learn, grow,
             and drive technological advancements.
           </h4>
+
           <div className="mt-4">
-            <button>
-              Know more <FaArrowRightLong size={16} className="ml-1 mt-1" />
-            </button>
+            <a
+              href="https://www.linkedin.com/in/devxtushar/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>
+                Know more <FaArrowRightLong size={16} className="ml-1 mt-1" />
+              </button>
+            </a>
           </div>
         </div>
         <div className="flex-1 flex flex-row justify-end">

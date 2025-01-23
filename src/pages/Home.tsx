@@ -6,6 +6,7 @@ import Works from "./Works";
 import About from "./About";
 import Experience from "./Experience";
 import Faq from "./Faq";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -32,15 +33,18 @@ function Home() {
             <div className="flex font-sans flex-col items-center text-gray-500">
               <h4>I'm a Software Engineer.</h4>
               <h4>
-                My interest lies in software development, problem solving.
+                My interest lies in software development & problem solving.
               </h4>
             </div>
           </div>
           <div className="flex gap-5">
-            <button>
-              <PiHandWavingBold size={18} />
-              Let's Talk
-            </button>
+            <Link to="/contact">
+              {" "}
+              <button>
+                <PiHandWavingBold size={18} />
+                Let's Talk
+              </button>
+            </Link>
             <button>
               Download App <FiArrowUpRight size={15} />
             </button>
