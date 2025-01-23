@@ -99,3 +99,21 @@ export const faqJson = [
       "Yes, absolutely! You can select the 'one-to-one' option in the contact form, and we can arrange a personalized session. I am committed to ensuring a productive and engaging discussion tailored to your needs.",
   },
 ];
+
+export const projectsJson = [
+  {
+    porjectName: "",
+    title: "",
+    description: [
+      {
+        points: "",
+      },
+    ],
+    images: [
+      {
+        url: "",
+      },
+    ],
+    liveUrl: "",
+  },
+];
