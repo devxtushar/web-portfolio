@@ -6,21 +6,21 @@ export default function Nav() {
     }
   };
   return (
-    <nav className="flex justify-center mt-5">
+    <nav className="flex flex-row justify-center mt-5">
       <ul className="navul flex flex-wrap">
         <li className="navli" onClick={() => handleScroll("home")}>
           Home
         </li>
         <li className="navli" onClick={() => handleScroll("work")}>
-          Works
+          Work
         </li>
-        <li className="navli" onClick={() => handleScroll("about")}>
+        <li className="navli navli_hide" onClick={() => handleScroll("about")}>
           About
         </li>
-        <li className="navli" onClick={() => handleScroll("experience")}>
+        <li className="navli " onClick={() => handleScroll("experience")}>
           Experience
         </li>
-        <li className="navli" onClick={() => handleScroll("faq")}>
+        <li className="navli navli_hide" onClick={() => handleScroll("faq")}>
           FAQ
         </li>
         <li className="navli">Let's Talk</li>

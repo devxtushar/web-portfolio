@@ -1,6 +1,3 @@
-nav {
-  padding-bottom: 50px;
-}
 .navul {
   position: fixed;
   border-radius: 3em;
@@ -105,4 +102,9 @@ tr {
   border: 1px solid #a3a2a23a;
   border-radius: 1.5em;
   padding: 2em;
+}
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  .navli_hide {
+    display: none;
+  }
 }

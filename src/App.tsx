@@ -8,7 +8,7 @@ import Faq from "./pages/Faq";
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col gap-20">
       <Nav />
       <main>
         <Home />
