@@ -22,7 +22,7 @@ export default function Nav() {
         <Link to="/" className="navli navli_hide">
           <li onClick={() => handleScroll("experience")}>Experience</li>
         </Link>
-        <Link to="/" className="navli">
+        <Link to="/" className="navli navli_hide">
           <li onClick={() => handleScroll("faq")}>FAQ</li>
         </Link>
         <Link to="/contact" className="navli">
