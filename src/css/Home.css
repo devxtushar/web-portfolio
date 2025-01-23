@@ -1,4 +1,8 @@
+nav {
+  padding-bottom: 50px;
+}
 .navul {
+  position: fixed;
   border-radius: 3em;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.1);
@@ -17,13 +21,13 @@
   border: 1px solid gray;
   transform: scale(1.1);
 }
-.navli:nth-child(1) {
+.navli:first-child {
   padding-left: 3em;
   border-top-left-radius: 3em;
   border-bottom-left-radius: 3em;
 }
 
-.navli:nth-child(4) {
+.navli:last-child {
   padding-right: 3em;
   border-top-right-radius: 3em;
   border-bottom-right-radius: 3em;
@@ -96,4 +100,9 @@
 tr {
   width: 100%;
   max-width: 400px;
+}
+.connect_container {
+  border: 1px solid #a3a2a23a;
+  border-radius: 1.5em;
+  padding: 2em;
 }

@@ -1,12 +1,11 @@
-import CustomTitle from "../components/CustomTitle";
-import { customTitleExperienceJson } from "../utils/JSON";
-import { GoDotFill } from "react-icons/go";
 import { FaArrowRightLong } from "react-icons/fa6";
 import CustomCardIcon from "../components/CustomCardIcon";
-
+import { customTitleWorks } from "../utils/JSON";
+import CustomTitle from "../components/CustomTitle";
 function About() {
   return (
-    <section className="flex flex-col gap-20 pt-20">
+    <section id="about" className="flex flex-col gap-20 pt-40">
+      <CustomTitle items={customTitleWorks} />
       <div className="flex flex-row flex-wrap gap-20">
         <div
           className="flex-1 flex flex-col gap-2"
@@ -42,7 +41,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="beyond">
+      <div className="beyond mt-20">
         <table>
           <tbody className="flex flex-row flex-wrap gap-5 justify-between">
             <tr>
@@ -141,121 +140,6 @@ function About() {
             </tr>
           </tbody>
         </table>
-      </div>
-      <div className="experience py-10">
-        <CustomTitle items={customTitleExperienceJson} />
-        <div>
-          <div>
-            <div className="flex flex-row gap-20 pt-10">
-              <div className="flex flex-col gap-2">
-                <div>
-                  <span className="t3 font-sans font-semibold">
-                    Software Developer, Suverafresh
-                  </span>
-                </div>
-                <div>
-                  <i className="t5 text-gray-500">
-                    Present - Oct 2024 / Kanpur, India
-                  </i>
-                </div>
-              </div>
-              <ul>
-                <li className="flex flex-row gap-2 items-center">
-                  <GoDotFill color="green" size={14} />
-                  <span className="t4 text-gray-400">
-                    Designed key features for embedding in-platform data.
-                  </span>
-                </li>
-                <li className="flex flex-row gap-2 items-center">
-                  <GoDotFill color="green" size={14} />
-                  <span className="t4 text-gray-400">
-                    Designed key features for embedding in-platform data.
-                  </span>
-                </li>
-                <li className="flex flex-row gap-2 items-center">
-                  <GoDotFill color="green" size={14} />
-                  <span className="t4 text-gray-400">
-                    Designed key features for embedding in-platform data.
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <hr className="mt-10" />
-          </div>
-          <div>
-            <div className="flex flex-row gap-20 pt-10">
-              <div className="flex flex-col gap-2">
-                <div>
-                  <span className="t3 font-sans font-semibold">
-                    Software Developer, Suverafresh
-                  </span>
-                </div>
-                <div>
-                  <i className="t5 text-gray-500">
-                    Present - Oct 2024 / Kanpur, India
-                  </i>
-                </div>
-              </div>
-              <ul>
-                <li className="flex flex-row gap-2 items-center">
-                  <GoDotFill color="green" size={14} />
-                  <span className="t4 text-gray-400">
-                    Designed key features for embedding in-platform data.
-                  </span>
-                </li>
-                <li className="flex flex-row gap-2 items-center">
-                  <GoDotFill color="green" size={14} />
-                  <span className="t4 text-gray-400">
-                    Designed key features for embedding in-platform data.
-                  </span>
-                </li>
-                <li className="flex flex-row gap-2 items-center">
-                  <GoDotFill color="green" size={14} />
-                  <span className="t4 text-gray-400">
-                    Designed key features for embedding in-platform data.
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <hr className="mt-10" />
-          </div>
-          <div>
-            <div className="flex flex-row gap-20 pt-10">
-              <div className="flex flex-col gap-2">
-                <div>
-                  <span className="t3 font-sans font-semibold">
-                    Software Developer, Suverafresh
-                  </span>
-                </div>
-                <div>
-                  <i className="t5 text-gray-500">
-                    Present - Oct 2024 / Kanpur, India
-                  </i>
-                </div>
-              </div>
-              <ul>
-                <li className="flex flex-row gap-2 items-center">
-                  <GoDotFill color="green" size={14} />
-                  <span className="t4 text-gray-400">
-                    Designed key features for embedding in-platform data.
-                  </span>
-                </li>
-                <li className="flex flex-row gap-2 items-center">
-                  <GoDotFill color="green" size={14} />
-                  <span className="t4 text-gray-400">
-                    Designed key features for embedding in-platform data.
-                  </span>
-                </li>
-                <li className="flex flex-row gap-2 items-center">
-                  <GoDotFill color="green" size={14} />
-                  <span className="t4 text-gray-400">
-                    Designed key features for embedding in-platform data.
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ import { FaChevronDown } from "react-icons/fa";
 
 function Faq() {
   return (
-    <section className="flex flex-col gap-20 py-20">
+    <section id="faq" className="flex flex-col gap-20 py-40">
       <CustomTitle items={customTitleFAQJson} />
       <div className="flex flex-row flex-wrap gap-10">
         <div className="flex-1 faq_card p-20 ">
