@@ -1,16 +1,23 @@
 import CustomTitle from "../components/CustomTitle";
 import { customTitleExperienceJson } from "../utils/JSON";
 import { GoDotFill } from "react-icons/go";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 function About() {
   return (
     <section>
-      <div className="flex-row gap-10">
-        <div className="flex-col gap-5">
-          <span>About Me</span>
-          <h1>Know who am I</h1>
-          <span>My journey in fewwords</span>
-          <h5>
+      <div className="flex flex-row flex-wrap gap-20">
+        <div
+          className="flex-1 flex flex-col gap-2"
+          style={{ minWidth: "250px" }}
+        >
+          <span className="t4 uppercase font-mono tracking-widest">
+            AIRBNB . 2023
+          </span>
+          <h1 className="font-serif">
+            Curating AR experiences while travelling
+          </h1>
+          <h4 className="text-gray-500 font-sans">
             Hello! I’m a results-driven Software Engineer with over 3 years of
             experience designing and developing high-performance applications.
             My expertise spans modern web and mobile technologies, with a focus
@@ -21,10 +28,18 @@ function About() {
             experience. Passionate about creating innovative solutions, I excel
             in collaborative environments and am always eager to learn, grow,
             and drive technological advancements.
-          </h5>
-          <button>Know more {"->"}</button>
+          </h4>
+          <div className="mt-4">
+            <button>
+              Know more <FaArrowRightLong size={16} className="ml-1 mt-1" />
+            </button>
+          </div>
         </div>
-        <div>{/* <img src="" alt="" /> // user image */}</div>
+        <div className="flex-1 flex flex-row justify-end">
+          <div className="about_img">
+            <img src="../images/tusharpic01.webp" alt="tushar image" />
+          </div>
+        </div>
       </div>
       <div className="beyond">
         <table>
