@@ -2,10 +2,11 @@ import CustomTitle from "../components/CustomTitle";
 import { customTitleExperienceJson } from "../utils/JSON";
 import { GoDotFill } from "react-icons/go";
 import { FaArrowRightLong } from "react-icons/fa6";
+import CustomCardIcon from "../components/CustomCardIcon";
 
 function About() {
   return (
-    <section>
+    <section className="flex flex-col gap-20 pt-20">
       <div className="flex flex-row flex-wrap gap-20">
         <div
           className="flex-1 flex flex-col gap-2"
@@ -43,24 +44,67 @@ function About() {
       </div>
       <div className="beyond">
         <table>
-          <tbody>
+          <tbody className="flex flex-row flex-wrap gap-5 justify-between">
             <tr>
-              <td>Beyond Portfolio</td>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    Beyond Portfolio
+                  </span>
+                  <h1 className="font-serif">Let's know more about me</h1>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td>Tech Stacks</td>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    My Tech Stacks
+                  </span>
+                  <span className="t4 text-gray-400">
+                    Designed key features for embedding in-platform data.
+                  </span>
+                  <div className="flex flex-row gap-4 justify-between pt-10">
+                    <CustomCardIcon name="JS" />
+                    <CustomCardIcon name="TS" />
+                    <CustomCardIcon name="RN" />
+                    <CustomCardIcon name="GL" />
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td>Location</td>
+              <td></td>
             </tr>
             <tr>
-              <td>Current Project</td>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    AIRBNB . 2023
+                  </span>
+                  <h1 className="font-serif">Let's know more about me</h1>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td>Social Accounts</td>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    AIRBNB . 2023
+                  </span>
+                  <h1 className="font-serif">Let's know more about me</h1>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td>My Persona</td>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    AIRBNB . 2023
+                  </span>
+                  <h1 className="font-serif">Let's know more about me</h1>
+                </div>
+              </td>
             </tr>
           </tbody>
         </table>

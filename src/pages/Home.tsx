@@ -33,10 +33,10 @@ function Home() {
         <div className="flex gap-5">
           <button>
             <PiHandWavingBold size={18} />
-            Let's talk
+            Let's Talk
           </button>
           <button>
-            Get Template <FiArrowUpRight size={15} />
+            Download App <FiArrowUpRight size={15} />
           </button>
         </div>
       </section>

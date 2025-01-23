@@ -88,3 +88,8 @@
   width: 100%;
   aspect-ratio: 1;
 }
+.tr_container {
+  border: 1px solid #a3a2a23a;
+  border-radius: 2em;
+  padding: 2em;
+}
