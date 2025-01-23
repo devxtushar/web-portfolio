@@ -2,7 +2,6 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { customTitleFAQJson } from "../utils/JSON";
 import CustomTitle from "../components/CustomTitle";
 import { PiHandWavingBold } from "react-icons/pi";
-import { FaChevronDown } from "react-icons/fa";
 import Nav from "../components/Nav";
 
 type Inputs = {
