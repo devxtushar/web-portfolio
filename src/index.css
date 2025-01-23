@@ -97,6 +97,23 @@ button:focus,
 button:focus-visible {
 } */
 
+.custom_card__icon {
+  border: 1px solid #a3a2a23a;
+  border-radius: 1.5em;
+  width: 70px;
+  aspect-ratio: 1;
+  padding: 1.2em;
+}
+.custom_card__iconbg {
+  background-color: #535bf2;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

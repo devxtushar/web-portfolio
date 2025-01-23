@@ -1,12 +1,23 @@
+import { FaArrowRightLong } from "react-icons/fa6";
+import CustomCardIcon from "../components/CustomCardIcon";
+import { customTitleWorks } from "../utils/JSON";
+import CustomTitle from "../components/CustomTitle";
 function About() {
   return (
-    <section>
-      <div className="flex-row gap-10">
-        <div className="flex-col gap-5">
-          <span>About Me</span>
-          <h1>Know who am I</h1>
-          <span>My journey in fewwords</span>
-          <h5>
+    <section id="about" className="flex flex-col gap-20 pt-40">
+      <CustomTitle items={customTitleWorks} />
+      <div className="flex flex-row flex-wrap gap-20">
+        <div
+          className="flex-1 flex flex-col gap-2"
+          style={{ minWidth: "250px" }}
+        >
+          <span className="t4 uppercase font-mono tracking-widest">
+            AIRBNB . 2023
+          </span>
+          <h1 className="font-serif">
+            Curating AR experiences while travelling
+          </h1>
+          <h4 className="text-gray-500 font-sans">
             Hello! I’m a results-driven Software Engineer with over 3 years of
             experience designing and developing high-performance applications.
             My expertise spans modern web and mobile technologies, with a focus
@@ -17,78 +28,118 @@ function About() {
             experience. Passionate about creating innovative solutions, I excel
             in collaborative environments and am always eager to learn, grow,
             and drive technological advancements.
-          </h5>
-          <button>Know more {"->"}</button>
+          </h4>
+          <div className="mt-4">
+            <button>
+              Know more <FaArrowRightLong size={16} className="ml-1 mt-1" />
+            </button>
+          </div>
         </div>
-        <div>{/* <img src="" alt="" /> // user image */}</div>
+        <div className="flex-1 flex flex-row justify-end">
+          <div className="about_img">
+            <img src="../images/tusharpic01.webp" alt="tushar image" />
+          </div>
+        </div>
       </div>
-      <div className="beyond">
+      <div className="beyond mt-20">
         <table>
-          <tbody>
+          <tbody className="flex flex-row flex-wrap gap-5 justify-between">
             <tr>
-              <td>Beyond Portfolio</td>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    Beyond Portfolio
+                  </span>
+                  <h1 className="font-serif">Let's know more about me</h1>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td>Tech Stacks</td>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    My Tech Stacks
+                  </span>
+                  <span className="t4 text-gray-400">
+                    Designed key features for embedding in-platform data.
+                  </span>
+                  <div className="flex flex-row gap-4 justify-between pt-10">
+                    <CustomCardIcon name="JS" />
+                    <CustomCardIcon name="TS" />
+                    <CustomCardIcon name="RN" />
+                    <CustomCardIcon name="GL" />
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td>Location</td>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    Latest Project
+                  </span>
+                  <span className="t4 text-gray-400">
+                    Designed key features for embedding in-platform data.
+                  </span>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td>Current Project</td>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    My Tech Stacks
+                  </span>
+                  <span className="t4 text-gray-400">
+                    Designed key features for embedding in-platform data.
+                  </span>
+                  <div className="flex flex-row gap-4 justify-between pt-10">
+                    <CustomCardIcon name="JS" />
+                    <CustomCardIcon name="TS" />
+                    <CustomCardIcon name="RN" />
+                    <CustomCardIcon name="GL" />
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td>Social Accounts</td>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    My Tech Stacks
+                  </span>
+                  <span className="t4 text-gray-400">
+                    Designed key features for embedding in-platform data.
+                  </span>
+                  <div className="flex flex-row gap-4 justify-between pt-10">
+                    <CustomCardIcon name="JS" />
+                    <CustomCardIcon name="TS" />
+                    <CustomCardIcon name="RN" />
+                    <CustomCardIcon name="GL" />
+                  </div>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td>My Persona</td>
+              <td>
+                <div className="flex flex-col gap-2 tr_container">
+                  <span className="t4 uppercase font-mono tracking-widest">
+                    My Tech Stacks
+                  </span>
+                  <span className="t4 text-gray-400">
+                    Designed key features for embedding in-platform data.
+                  </span>
+                  <div className="flex flex-row gap-4 justify-between pt-10">
+                    <CustomCardIcon name="JS" />
+                    <CustomCardIcon name="TS" />
+                    <CustomCardIcon name="RN" />
+                    <CustomCardIcon name="GL" />
+                  </div>
+                </div>
+              </td>
             </tr>
           </tbody>
         </table>
-      </div>
-      <div className="experience">
-        <span>My experiences</span>
-        <h1>Where I've Been Employed</h1>
-        <div>
-          <div className="flex-row gap-10">
-            <div className="flex-col gap-2">
-              <span>Product Designer,BetterPlace</span>
-              <i>May 2022- Present / Bangalore, India</i>
-            </div>
-            <div>
-              <ul>
-                <li>Designed key features for embedding in-platform data.</li>
-                <li>Designed key features for embedding in-platform data.</li>
-                <li>Designed key features for embedding in-platform data.</li>
-              </ul>
-            </div>
-          </div>
-          <hr />
-          <div className="flex-row gap-10">
-            <div className="flex-col gap-2">
-              <span>Product Designer,BetterPlace</span>
-              <i>May 2022- Present / Bangalore, India</i>
-            </div>
-            <div>
-              <ul>
-                <li>Designed key features for embedding in-platform data.</li>
-                <li>Designed key features for embedding in-platform data.</li>
-                <li>Designed key features for embedding in-platform data.</li>
-              </ul>
-            </div>
-          </div>
-          <hr />
-        </div>
-        <div className="p-10">
-          <div className="flex-col gap-5">
-            <h1>Let's Connect and Create Something Amazing!</h1>
-            <span>
-              React out to me for collaborations, inquiries, or just to say
-              hello.
-            </span>
-          </div>
-          <button>Contact Me </button>
-        </div>
       </div>
     </section>
   );
