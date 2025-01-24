@@ -122,7 +122,13 @@ export const workProjectsJson = [
         name: "Redux Toolkit",
       },
       {
+        name: "Node",
+      },
+      {
         name: "Express",
+      },
+      {
+        name: "MongoDB",
       },
       {
         name: "AWS",
