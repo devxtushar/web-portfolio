@@ -9,6 +9,7 @@ type Inputs = {
   fullname: string;
   phoneNumber: string;
   email: string;
+  linkedin: string;
 };
 
 function Contact() {
@@ -80,6 +81,12 @@ function Contact() {
                       placeholder="Enter Your Email"
                     />
                     {errors.phoneNumber && <span>This field is required</span>}
+                  </div>
+                  <div>
+                    <input
+                      {...register("linkedin")}
+                      placeholder="Enter Your LinkedIn"
+                    />
                   </div>
                   <div>
                     <span className="block t5 font-bold">
