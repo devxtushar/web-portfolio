@@ -9,7 +9,7 @@ type Inputs = {
   fullname: string;
   phoneNumber: string;
   email: string;
-  linkedin: string;
+  msg: string;
 };
 
 function Contact() {
@@ -84,8 +84,8 @@ function Contact() {
                   </div>
                   <div>
                     <input
-                      {...register("linkedin")}
-                      placeholder="Enter Your LinkedIn"
+                      {...register("msg")}
+                      placeholder="Enter Your Message"
                     />
                   </div>
                   <div>
