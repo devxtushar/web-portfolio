@@ -100,20 +100,161 @@ export const faqJson = [
   },
 ];
 
-export const projectsJson = [
+export const workProjectsJson = [
   {
-    porjectName: "",
-    title: "",
+    projectName: "Attendee",
+    title: "Streamlining employee attendance management",
+    startYear: "2024",
+    techStack: [
+      {
+        name: "Typescript",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "React Native",
+      },
+      {
+        name: "React Native Paper",
+      },
+      {
+        name: "Redux Toolkit",
+      },
+      {
+        name: "Express",
+      },
+      {
+        name: "AWS",
+      },
+    ],
     description: [
       {
-        points: "",
+        points:
+          "Streamlined employee attendance tracking, reducing manual errors by 30%.",
+      },
+      {
+        points:
+          "Implemented seamless pagination for handling data-heavy attendance logs efficiently.",
+      },
+      {
+        points:
+          "Enhanced security with JWT-based authentication, ensuring safe access to user data.",
+      },
+      {
+        points:
+          "Integrated real-time notifications with Firebase, improving communication by 25%.",
+      },
+      {
+        points:
+          "Utilized React Native Navigation for intuitive and user-friendly app navigation.",
       },
     ],
     images: [
       {
-        url: "",
+        url: "/images/hr-home-removebg.png",
+      },
+      {
+        url: "/images/hr-verify-removebg.png",
       },
     ],
     liveUrl: "",
+  },
+  {
+    projectName: "Your Style",
+    startYear: "2023",
+    techStack: [
+      {
+        name: "Typescript",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "MUI",
+      },
+      {
+        name: "ReactJS",
+      },
+      {
+        name: "Redux Toolkit",
+      },
+    ],
+    title: "Trendy gen z fashion for all ages",
+    description: [
+      {
+        points:
+          "Implemented cart functionality using Redux Toolkit for efficient state management.",
+      },
+      {
+        points:
+          "Designed a fully responsive user interface ensuring compatibility across devices.",
+      },
+      {
+        points:
+          "Leveraged Tailwind CSS for rapid and consistent styling across the application.",
+      },
+      {
+        points:
+          "Integrated TypeScript to enhance type safety and maintainable code structure.",
+      },
+      {
+        points:
+          "Utilized React Router DOM for seamless navigation and dynamic routing.",
+      },
+    ],
+    images: [
+      {
+        url: "/images/your-style-home.png",
+      },
+      {
+        url: "/images/your-style-parallax.png",
+      },
+    ],
+    liveUrl: "https://your-style.vercel.app/",
+  },
+  {
+    projectName: "Earnest Task Creator",
+    startYear: "2022",
+    title: "Simplify your to-do lists & task",
+    techStack: [
+      {
+        name: "Typescript",
+      },
+      {
+        name: "ReactJS",
+      },
+      {
+        name: "Redux Toolkit",
+      },
+    ],
+    description: [
+      {
+        points:
+          "Developed a to-do list application with CRUD functionality for managing tasks efficiently.",
+      },
+      {
+        points:
+          "Implemented Redux Toolkit for state management to ensure smooth updates and performance.",
+      },
+      {
+        points:
+          "Designed a fully responsive interface, providing a seamless experience across devices.",
+      },
+      {
+        points:
+          "Built with TypeScript to enhance code reliability and maintainability.",
+      },
+    ],
+
+    images: [
+      {
+        url: "/images/earnest-task.png",
+      },
+      {
+        url: "/images/earnest-task.png",
+      },
+    ],
+    liveUrl: "https://earnest-task-frontend.vercel.app/",
   },
 ];

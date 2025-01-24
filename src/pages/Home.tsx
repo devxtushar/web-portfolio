@@ -7,6 +7,7 @@ import About from "./About";
 import Experience from "./Experience";
 import Faq from "./Faq";
 import { Link } from "react-router-dom";
+import { FaFileDownload } from "react-icons/fa";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
             <button style={{ background: "#010101", color: "white" }}>
               <GoDotFill color="green" size={20} className="pt-1" />
               Available for opportunities
+              <FaFileDownload className="pt-1 ml-2" />
             </button>
           </div>
           <div className="flex flex-col gap-5 ">
@@ -39,7 +41,6 @@ function Home() {
           </div>
           <div className="flex gap-5">
             <Link to="/contact">
-              {" "}
               <button>
                 <PiHandWavingBold size={18} />
                 Let's Talk
