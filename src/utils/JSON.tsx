@@ -116,7 +116,7 @@ export const workProjectsJson = [
         name: "React Native",
       },
       {
-        name: "React Native Paper",
+        name: "Native Paper",
       },
       {
         name: "Redux Toolkit",
@@ -252,7 +252,7 @@ export const workProjectsJson = [
         url: "/images/earnest-task.png",
       },
       {
-        url: "/images/earnest-task.png",
+        url: "/images/earnest-task-validation.png",
       },
     ],
     liveUrl: "https://earnest-task-frontend.vercel.app/",
