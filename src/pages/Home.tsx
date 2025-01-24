@@ -8,6 +8,7 @@ import Experience from "./Experience";
 import Faq from "./Faq";
 import { Link } from "react-router-dom";
 import { FaFileDownload } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -56,6 +57,7 @@ function Home() {
         <Experience />
         <Faq />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -45,14 +45,13 @@ function WorkCard(props: any) {
           </span>
           <h1 className="font-serif">{title}</h1>
         </div>
-
         <hr />
         <ul className="flex flex-col gap-2">
           {description.map((items: { points: string }, i: number) => {
             const { points } = items;
             return (
               <li key={i} className="t3 font-sans flex flex-row gap-4 ">
-                <AiOutlineCheckCircle className="mt-2.5" /> {points}
+                <AiOutlineCheckCircle className="mt-2" /> {points}
               </li>
             );
           })}
