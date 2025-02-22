@@ -23,7 +23,7 @@ function Contact() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className="layout">
       <Nav />
       <main>
         <section className="flex flex-col gap-20 py-40">

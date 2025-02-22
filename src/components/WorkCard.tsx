@@ -20,7 +20,7 @@ function WorkCard(props: any) {
     infinite: true,
     speed: 200,
     autoplay: true,
-    slidesToShow: 4,
+    slidesToShow: window.innerWidth === 410 ? 3 : 2,
     slidesToScroll: 1,
   };
   var settingsImage = {
@@ -32,12 +32,11 @@ function WorkCard(props: any) {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-
   return (
-    <div className="flex flex-wrap gap-20 card project_space">
-      <div
-        className="flex-1 flex flex-col gap-10 "
-        style={{ width: "100%", maxWidth: 600, minWidth: 250 }}
+    <div className="flex flex-wrap gap-10 card project_space">
+      <section
+        className="flex-1 flex flex-col gap-10 product_des__section"
+        style={{ width: "100%", maxWidth: 750, minWidth: 360 }}
       >
         <div className="flex flex-col gap-2">
           <span className="t4 uppercase font-mono tracking-widest">
@@ -64,16 +63,23 @@ function WorkCard(props: any) {
             })}
           </Slider>
         </div>
-        <div className="flex-1 flex items-end pb-10">
+        <div className="flex-1 flex items-end pb-10 center_section">
           <a href={liveUrl} target="_blank">
             <button>
               Live Preview <FiArrowUpRight size={15} />
             </button>
           </a>
         </div>
-      </div>
-      <div className="flex-1 flex justify-end">
-        <div style={{ width: "100%", maxWidth: 370, minWidth: 250 }}>
+      </section>
+      <section className="flex-1 flex justify-end center_section">
+        <div
+          style={{
+            width: "100%",
+            maxWidth: 360,
+            minWidth: 300,
+          }}
+          className="prod_images__section"
+        >
           <Slider {...settingsImage}>
             {images.map((items: { url: string }, i: number) => {
               const { url } = items;
@@ -88,7 +94,7 @@ function WorkCard(props: any) {
             })}
           </Slider>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -115,7 +115,7 @@ button:focus-visible {
 .custom_card__btn {
   border: 1px solid #a3a2a23a;
   border-radius: 6px;
-  padding: 0.5em 1em;
+  padding: 0.5em;
   background-color: var(--basecolor);
 }
 .custom_card__btnbg {
@@ -154,6 +154,15 @@ input {
   }
   body {
     padding: 1em 2em;
+  }
+  .product_des__section {
+    min-width: 300px !important;
+  }
+  .prod_images__section {
+    max-width: 300px !important;
+  }
+  button {
+    padding: 0.5em 1em !important;
   }
 }
 

@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <div>
+    <div className="layout">
       <Nav />
       <main>
         <section id="home" className="flex flex-col gap-10 items-center pt-40">
@@ -48,7 +48,7 @@ function Home() {
               </button>
             </Link>
             <button>
-              Download App <FiArrowUpRight size={15} />
+              Download Resume <FiArrowUpRight size={15} />
             </button>
           </div>
         </section>
