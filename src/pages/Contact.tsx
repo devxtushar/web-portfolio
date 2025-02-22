@@ -18,7 +18,8 @@ function Contact() {
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = () =>
+    alert("Thank you contacting! Response time is typically around 24 hours");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -61,24 +62,34 @@ function Contact() {
                 >
                   <div>
                     <input
-                      {...(register("fullname"), { required: true })}
+                      {...register("fullname", {
+                        required: "Fullname is required*",
+                      })}
                       placeholder="Enter Your Fullname"
+                      type="text"
                     />
                     {errors.fullname && (
                       <span className="t5 text-gray-500">
-                        Fullname is required*
+                        {errors.fullname.message}
                       </span>
                     )}
                   </div>
 
                   <div>
                     <input
-                      {...register("phoneNumber", { required: true })}
-                      placeholder="Enter Your Phone Number"
+                      {...register("phoneNumber", {
+                        required: "Phone Number is required*",
+                        pattern: {
+                          value: /^[0-9]{10}$/,
+                          message: "Mobile number must be exactly 10 digits",
+                        },
+                      })}
+                      placeholder="+91 Enter Your Phone Number"
+                      type="number"
                     />
                     {errors.phoneNumber && (
                       <span className="t5 text-gray-500">
-                        Phone Number is required*
+                        {errors.phoneNumber.message}
                       </span>
                     )}
                   </div>
@@ -86,6 +97,7 @@ function Contact() {
                     <input
                       {...register("email", { required: true })}
                       placeholder="Enter Your Email"
+                      type="email"
                     />
                     {errors.email && (
                       <span className="t5 text-gray-500">
