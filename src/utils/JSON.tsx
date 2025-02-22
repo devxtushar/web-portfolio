@@ -32,8 +32,8 @@ export const myExperienceJson = [
     ],
   },
   {
-    designation: "Software Engineer & Educator",
-    company: "SkillyCoders",
+    designation: "Freelancer",
+    company: "Web & App Dev",
     join: "Jul 2022",
     leave: "Sep 2024",
     city: "Kanpur",
@@ -86,7 +86,7 @@ export const faqJson = [
   {
     question: "How do your quote pricing works?",
     answer:
-      "The quote pricing depends entirely on the project's complexity, scope, and specific requirements. I recommend scheduling a Google Meet to discuss the details, where we can align on your needs and finalize a suitable pricing model.",
+      "The quote pricing depends entirely on the project's complexity, scope, and specific requirements. I recommend scheduling a Google/Zoom Meet to discuss the details, where we can align on your needs and finalize a suitable pricing model.",
   },
   {
     question: "When can we get on call?",
@@ -96,7 +96,7 @@ export const faqJson = [
   {
     question: "Can we have a one-to-one session?",
     answer:
-      "Yes, absolutely! You can select the 'one-to-one' option in the contact form, and we can arrange a personalized session. I am committed to ensuring a productive and engaging discussion tailored to your needs.",
+      "Yes, absolutely! You can fill the contact form, and I can arrange a personalized session as soon as possible. I am committed to ensuring a productive and engaging discussion tailored to your needs.",
   },
 ];
 

@@ -29,7 +29,7 @@ function Contact() {
         <section className="flex flex-col gap-20 py-40">
           <CustomTitle items={customTitleFAQJson} />
           <div className="flex flex-row flex-wrap gap-10">
-            <div className="flex-1 faq_card p-20">
+            <div className="flex-1 faq_card p-10">
               <div className="mb-10 text-center">
                 <h1 className="font-serif">
                   Have any more questions or want to discuss on project?
@@ -61,11 +61,14 @@ function Contact() {
                 >
                   <div>
                     <input
-                      defaultValue=""
                       {...(register("fullname"), { required: true })}
                       placeholder="Enter Your Fullname"
                     />
-                    {errors.fullname && <span>This field is required</span>}
+                    {errors.fullname && (
+                      <span className="t5 text-gray-500">
+                        Fullname is required*
+                      </span>
+                    )}
                   </div>
 
                   <div>
@@ -73,14 +76,22 @@ function Contact() {
                       {...register("phoneNumber", { required: true })}
                       placeholder="Enter Your Phone Number"
                     />
-                    {errors.phoneNumber && <span>This field is required</span>}
+                    {errors.phoneNumber && (
+                      <span className="t5 text-gray-500">
+                        Phone Number is required*
+                      </span>
+                    )}
                   </div>
                   <div>
                     <input
                       {...register("email", { required: true })}
                       placeholder="Enter Your Email"
                     />
-                    {errors.phoneNumber && <span>This field is required</span>}
+                    {errors.email && (
+                      <span className="t5 text-gray-500">
+                        Email is required*
+                      </span>
+                    )}
                   </div>
                   <div>
                     <input

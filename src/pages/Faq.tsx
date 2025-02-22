@@ -12,7 +12,7 @@ function Faq() {
     <section id="faq" className="flex flex-col gap-20 py-40">
       <CustomTitle items={customTitleFAQJson} />
       <div className="flex flex-row flex-wrap gap-10">
-        <div className="flex-1 faq_card p-20">
+        <div className="flex-1 faq_card p-10">
           <div className="mb-10 text-center">
             <h1 className="font-serif">
               Have any more questions or want to discuss on project?
@@ -43,20 +43,15 @@ function Faq() {
             const { question, answer } = items;
             return (
               <div key={i} className="faq_card p-10">
-                <div className="flex flex-row justify-between">
+                <div
+                  className="flex flex-row justify-between cursor-pointer"
+                  onClick={() => setSelectedFaq(i)}
+                >
                   <h3>{question}</h3>
                   {selectedFaq === i ? (
-                    <FaChevronUp
-                      size={20}
-                      className="cursor-pointer"
-                      onClick={() => setSelectedFaq(i)}
-                    />
+                    <FaChevronUp size={20} className="cursor-pointer" />
                   ) : (
-                    <FaChevronDown
-                      size={20}
-                      className="cursor-pointer"
-                      onClick={() => setSelectedFaq(i)}
-                    />
+                    <FaChevronDown size={20} className="cursor-pointer" />
                   )}
                 </div>
                 {selectedFaq === i && (

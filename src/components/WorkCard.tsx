@@ -20,7 +20,7 @@ function WorkCard(props: any) {
     infinite: true,
     speed: 200,
     autoplay: true,
-    slidesToShow: window.innerWidth === 410 ? 3 : 2,
+    slidesToShow: window.innerWidth < 410 ? 2 : 3,
     slidesToScroll: 1,
   };
   var settingsImage = {

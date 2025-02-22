@@ -71,7 +71,6 @@
   max-width: 265px;
   min-width: 200px;
   aspect-ratio: 1;
-  border-radius: 1.6em;
 }
 .faq_card {
   border: 1px solid #a3a2a23a;
@@ -79,8 +78,10 @@
 }
 .btn_posi {
   position: absolute;
+  width: 100%;
+  max-width: 265px;
   bottom: 0;
-  padding: 2em 1em;
+  padding: 1em;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.6);
