@@ -115,7 +115,7 @@ button:focus-visible {
 .custom_card__btn {
   border: 1px solid #a3a2a23a;
   border-radius: 6px;
-  padding: 0.5em 1em;
+  padding: 0.5em;
   background-color: var(--basecolor);
 }
 .custom_card__btnbg {
@@ -136,24 +136,27 @@ input {
   font-family: monospace;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 @media screen and (min-width: 0px) and (max-width: 550px) {
   html {
     font-size: 8px;
   }
   body {
     padding: 1em 2em;
+  }
+  .product_des__section {
+    min-width: 300px !important;
+  }
+  .prod_images__section {
+    max-width: 300px !important;
+  }
+  button {
+    padding: 0.5em 1em !important;
   }
 }
 

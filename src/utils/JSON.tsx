@@ -32,8 +32,8 @@ export const myExperienceJson = [
     ],
   },
   {
-    designation: "Software Engineer & Educator",
-    company: "SkillyCoders",
+    designation: "Freelancer",
+    company: "Web & App Dev",
     join: "Jul 2022",
     leave: "Sep 2024",
     city: "Kanpur",
@@ -86,7 +86,7 @@ export const faqJson = [
   {
     question: "How do your quote pricing works?",
     answer:
-      "The quote pricing depends entirely on the project's complexity, scope, and specific requirements. I recommend scheduling a Google Meet to discuss the details, where we can align on your needs and finalize a suitable pricing model.",
+      "The quote pricing depends entirely on the project's complexity, scope, and specific requirements. I recommend scheduling a Google/Zoom Meet to discuss the details, where we can align on your needs and finalize a suitable pricing model.",
   },
   {
     question: "When can we get on call?",
@@ -96,11 +96,137 @@ export const faqJson = [
   {
     question: "Can we have a one-to-one session?",
     answer:
-      "Yes, absolutely! You can select the 'one-to-one' option in the contact form, and we can arrange a personalized session. I am committed to ensuring a productive and engaging discussion tailored to your needs.",
+      "Yes, absolutely! You can fill the contact form, and I can arrange a personalized session as soon as possible. I am committed to ensuring a productive and engaging discussion tailored to your needs.",
   },
 ];
 
 export const workProjectsJson = [
+  {
+    projectName: "SuveraFresh",
+    startYear: "2025",
+    techStack: [
+      {
+        name: "Typescript",
+      },
+      {
+        name: "NativeWind",
+      },
+      {
+        name: "React Native",
+      },
+      {
+        name: "Native Paper",
+      },
+      {
+        name: "Redux Toolkit",
+      },
+      {
+        name: "Firebase",
+      },
+    ],
+    title: "Fresh Raw Non-Veg Delivered to Your Doorstep",
+    description: [
+      {
+        points:
+          "Developed a seamless ordering system using Redux Native, allowing users to purchase fresh raw meat, and seafood.",
+      },
+      {
+        points:
+          "Implemented JWT Secure Token Refresh and Access Token mechanism to enhance user authentication and session management.",
+      },
+      {
+        points:
+          "Integrated Firebase notifications to provide real-time updates on order status, promotions, and personalized alerts.",
+      },
+      {
+        points:
+          "Designed a visually appealing and responsive UI using NativeWind and Native Paper, ensuring a smooth user experience across devices.",
+      },
+      {
+        points:
+          "Developed a full-featured cart functionality, allowing users to add, update, and remove items seamlessly before checkout.",
+      },
+      {
+        points:
+          "Utilized React Native Tab and Stack Navigation for intuitive and user-friendly app navigation.",
+      },
+    ],
+    images: [
+      {
+        url: "/images/sf-01.png",
+      },
+
+      {
+        url: "/images/sf-03.png",
+      },
+      {
+        url: "/images/sf-04.png",
+      },
+    ],
+    liveUrl: "",
+  },
+  {
+    projectName: "Your Style",
+    startYear: "2025",
+    techStack: [
+      {
+        name: "Typescript",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "ReactJS",
+      },
+      {
+        name: "Redux Toolkit",
+      },
+      {
+        name: "Express",
+      },
+      {
+        name: "MongoDB",
+      },
+    ],
+    title: "Cross-Platform Product Comparison Made Easy",
+    description: [
+      {
+        points:
+          "Implemented product comparison functionality using Redux Toolkit, allowing users to select and compare items from different platforms seamlessly",
+      },
+      {
+        points:
+          "Developed advanced sorting, filtering, and pagination, ensuring an optimized user experience when browsing products.",
+      },
+      {
+        points:
+          "Integrated a responsive and intuitive UI, designed with Tailwind CSS for consistency across devices.",
+      },
+      {
+        points:
+          "Leveraged React Router DOM for smooth navigation, enhancing usability and engagement.",
+      },
+      {
+        points:
+          "Upcoming updates include JWT-secured authentication for enhanced security and a wishlist feature for saving favorite products",
+      },
+    ],
+    images: [
+      {
+        url: "/images/ys-01.png",
+      },
+      {
+        url: "/images/ys-02.png",
+      },
+      {
+        url: "/images/ys-03.png",
+      },
+      {
+        url: "/images/ys-04.png",
+      },
+    ],
+    liveUrl: "",
+  },
   {
     projectName: "Attendee",
     title: "Streamlining employee attendance management",
@@ -155,6 +281,9 @@ export const workProjectsJson = [
         points:
           "Utilized React Native Navigation for intuitive and user-friendly app navigation.",
       },
+      {
+        points: "Deployed backend on AWS with AWS Elasticbean Stalk.",
+      },
     ],
     images: [
       {
@@ -167,8 +296,8 @@ export const workProjectsJson = [
     liveUrl: "",
   },
   {
-    projectName: "Your Style",
-    startYear: "2023",
+    projectName: "SuveraFresh",
+    startYear: "2024",
     techStack: [
       {
         name: "Typescript",
@@ -177,48 +306,55 @@ export const workProjectsJson = [
         name: "Tailwind CSS",
       },
       {
-        name: "MUI",
+        name: "ReactJS",
       },
       {
-        name: "ReactJS",
+        name: "MUI",
       },
       {
         name: "Redux Toolkit",
       },
     ],
-    title: "Trendy gen z fashion for all ages",
+    title: "Fresh Raw Non-Veg Delivered to Your Doorstep",
     description: [
       {
         points:
-          "Implemented cart functionality using Redux Toolkit for efficient state management.",
+          "Developed a seamless ordering system using ReactJS, allowing users to browse and purchase fresh raw meat and seafood.",
       },
       {
         points:
-          "Designed a fully responsive user interface ensuring compatibility across devices.",
+          "Implemented JWT Secure Token Refresh and Access Token mechanism to enhance user authentication and session management.",
       },
       {
         points:
-          "Leveraged Tailwind CSS for rapid and consistent styling across the application.",
+          "Designed a visually appealing and responsive UI using Tailwind CSS and MUI, ensuring a smooth user experience across devices.",
       },
       {
         points:
-          "Integrated TypeScript to enhance type safety and maintainable code structure.",
+          "Developed a full-featured cart functionality, allowing users to add, update, and remove items seamlessly before checkout.",
       },
       {
         points:
-          "Utilized React Router DOM for seamless navigation and dynamic routing.",
+          "Utilized React Router Dom for intuitive and user-friendly web navigation.",
       },
     ],
     images: [
       {
-        url: "/images/your-style-home.png",
+        url: "/images/sf-web-01.png",
       },
       {
-        url: "/images/your-style-parallax.png",
+        url: "/images/sf-web-02.png",
+      },
+      {
+        url: "/images/sf-web-03.png",
+      },
+      {
+        url: "/images/sf-web-04.png",
       },
     ],
-    liveUrl: "https://your-style.vercel.app/",
+    liveUrl: "",
   },
+
   {
     projectName: "Earnest Task Creator",
     startYear: "2022",
@@ -261,6 +397,6 @@ export const workProjectsJson = [
         url: "/images/earnest-task-validation.png",
       },
     ],
-    liveUrl: "https://earnest-task-frontend.vercel.app/",
+    liveUrl: "",
   },
 ];

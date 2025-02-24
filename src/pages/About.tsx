@@ -16,7 +16,7 @@ function About() {
 
           <span className="t4">My journey in few words</span>
           <h4 className="text-gray-500 font-sans">
-            Hello! I’m a results-driven Software Engineer with over 3 years of
+            Hello! I’m a results-driven Software Engineer with over 2 years of
             experience designing and developing high-performance applications.
             My expertise spans modern web and mobile technologies, with a focus
             on delivering user-centric solutions that are both scalable and
@@ -40,7 +40,7 @@ function About() {
             </a>
           </div>
         </div>
-        <div className="flex-1 flex flex-row justify-end">
+        <div className="flex-1 flex flex-row justify-end center_section">
           <div className="about_img">
             <img src="../images/tusharpic01.webp" alt="tushar image" />
           </div>

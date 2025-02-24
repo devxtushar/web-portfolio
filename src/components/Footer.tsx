@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <hr />
-      <div className="flex flex-row flex-wrap justify-between py-10">
+      <div className="flex flex-row flex-wrap justify-between py-10 gap-10">
         <div>
           <h3 className="text-gray-500 font-sans">
             Created by{" "}

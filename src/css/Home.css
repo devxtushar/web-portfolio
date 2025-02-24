@@ -1,3 +1,9 @@
+.layout {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .navul {
   position: fixed;
   border-radius: 3em;
@@ -8,6 +14,7 @@
 
 .navul.transparent {
   background: var(--basecolor);
+  z-index: 999999;
 }
 
 .navli {
@@ -39,13 +46,14 @@
   border-radius: 20px;
   padding: 4em 4em 0em 6em;
   width: 100%;
+  min-width: 330px;
   height: auto;
   overflow: hidden;
 }
 .product {
-  width: 320px;
-  min-width: 320px;
-  aspect-ratio: 0.8;
+  width: 100%;
+  min-width: 300px;
+  aspect-ratio: 0.5;
 }
 
 .avatar {
@@ -63,7 +71,6 @@
   max-width: 265px;
   min-width: 200px;
   aspect-ratio: 1;
-  border-radius: 1.6em;
 }
 .faq_card {
   border: 1px solid #a3a2a23a;
@@ -71,8 +78,10 @@
 }
 .btn_posi {
   position: absolute;
+  width: 100%;
+  max-width: 265px;
   bottom: 0;
-  padding: 2em 1em;
+  padding: 1em;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.6);
@@ -124,5 +133,10 @@ tr {
 @media screen and (min-width: 0px) and (max-width: 1100px) {
   .card {
     padding: 2em 1em 0em;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 1344px) {
+  .center_section {
+    justify-content: center;
   }
 }
