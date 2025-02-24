@@ -27,7 +27,7 @@ function WorkCard(props: any) {
   return (
     <div className="flex flex-wrap gap-10 card project_space">
       <section
-        className="flex-1 flex flex-col gap-10 product_des__section"
+        className="flex-1 flex flex-col gap-20 product_des__section"
         style={{ width: "100%", maxWidth: 750, minWidth: 360 }}
       >
         <div className="flex flex-col gap-2">
@@ -37,7 +37,7 @@ function WorkCard(props: any) {
           <h1 className="font-serif">{title}</h1>
         </div>
         <hr />
-        <ul className="flex flex-col gap-2">
+        <ul className="flex flex-col gap-10">
           {description.map((items: { points: string }, i: number) => {
             const { points } = items;
             return (

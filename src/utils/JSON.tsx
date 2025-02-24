@@ -155,9 +155,7 @@ export const workProjectsJson = [
       {
         url: "/images/sf-01.png",
       },
-      {
-        url: "/images/sf-02.png",
-      },
+
       {
         url: "/images/sf-03.png",
       },
@@ -282,6 +280,9 @@ export const workProjectsJson = [
       {
         points:
           "Utilized React Native Navigation for intuitive and user-friendly app navigation.",
+      },
+      {
+        points: "Deployed backend on AWS with AWS Elasticbean Stalk.",
       },
     ],
     images: [
