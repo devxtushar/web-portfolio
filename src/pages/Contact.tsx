@@ -15,11 +15,14 @@ type Inputs = {
 function Contact() {
   const {
     register,
+    reset,
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = () =>
+  const onSubmit: SubmitHandler<Inputs> = () => {
     alert("Thank you contacting! Response time is typically around 24 hours");
+    reset();
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
