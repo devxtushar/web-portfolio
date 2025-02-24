@@ -1,18 +1,10 @@
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import { FiArrowUpRight } from "react-icons/fi";
 import CustomButton from "./CustomButton";
 import Slider from "@ant-design/react-slick";
 
 function WorkCard(props: any) {
-  const {
-    projectName,
-    startYear,
-    title,
-    description,
-    images,
-    liveUrl,
-    techStack,
-  } = props.items;
+  const { projectName, startYear, title, description, images, techStack } =
+    props.items;
 
   var settings = {
     dots: false,
@@ -64,11 +56,11 @@ function WorkCard(props: any) {
           </Slider>
         </div>
         <div className="flex-1 flex items-end pb-10 center_section">
-          <a href={liveUrl} target="_blank">
+          {/* <a href={liveUrl} target="_blank">
             <button>
               Live Preview <FiArrowUpRight size={15} />
             </button>
-          </a>
+          </a> */}
         </div>
       </section>
       <section className="flex-1 flex justify-end center_section">
