@@ -23,7 +23,7 @@ function Experience() {
                       </span>
                     </div>
                     <div>
-                      <i className="t5 text-gray-500">
+                      <i className="t4 text-gray-500">
                         {leave} - {join} / {city}, {country}
                       </i>
                     </div>
@@ -57,10 +57,9 @@ function Experience() {
           <h1 className="font-serif capitalize">
             Let's connect & create some amazing products!
           </h1>
-          <h5 className="text-gray-400 font-sans">
-            React out to me for collaborations, inquires, one to one or just to
-            say hello.
-          </h5>
+          <h4 className="text-gray-400 font-sans">
+            React out to me for collaborations, inquires or one to one session.
+          </h4>
         </div>
         <div className="flex-1  flex justify-end items-center">
           <Link to="/contact">
