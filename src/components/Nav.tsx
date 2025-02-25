@@ -39,13 +39,13 @@ export default function Nav() {
         <Link to="/" className="navli">
           <li onClick={() => handleScroll("about")}>About</li>
         </Link>
-        <Link to="/" className="navli navli_hide">
+        <Link to="/" className="navli">
           <li onClick={() => handleScroll("experience")}>Experience</li>
         </Link>
         <Link to="/" className="navli navli_hide">
           <li onClick={() => handleScroll("faq")}>FAQ</li>
         </Link>
-        <Link to="/contact" className="navli">
+        <Link to="/contact" className="navli navli_hide">
           <li>Let's Talk</li>
         </Link>
       </ul>

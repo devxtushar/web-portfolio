@@ -72,9 +72,15 @@
   min-width: 200px;
   aspect-ratio: 1;
 }
+.info {
+  border: 1px solid #a3a2a23a;
+  border-radius: 2em;
+}
 .faq_card {
   border: 1px solid #a3a2a23a;
   border-radius: 2em;
+  width: 100%;
+  min-width: 300px;
 }
 .btn_posi {
   position: absolute;
@@ -82,8 +88,8 @@
   max-width: 265px;
   bottom: 0;
   padding: 1em;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
 }
@@ -124,9 +130,19 @@ tr {
   border-radius: 1.5em;
   padding: 2em;
 }
-@media screen and (min-width: 0px) and (max-width: 450px) {
+@media screen and (min-width: 0px) and (max-width: 475px) {
   .navli_hide {
     display: none;
+  }
+  .info_inside {
+    flex-wrap: wrap;
+  }
+  .profile {
+    max-width: 100%;
+    aspect-ratio: 1;
+  }
+  .btn_posi {
+    max-width: 100%;
   }
 }
 

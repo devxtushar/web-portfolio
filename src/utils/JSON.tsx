@@ -33,7 +33,7 @@ export const myExperienceJson = [
   },
   {
     designation: "Freelancer",
-    company: "Web & App Dev",
+    company: "Web & Android Dev",
     join: "Jul 2022",
     leave: "Sep 2024",
     city: "Kanpur",
@@ -89,11 +89,6 @@ export const faqJson = [
       "The quote pricing depends entirely on the project's complexity, scope, and specific requirements. I recommend scheduling a Google/Zoom Meet to discuss the details, where we can align on your needs and finalize a suitable pricing model.",
   },
   {
-    question: "When can we get on call?",
-    answer:
-      "You can send me your contact details through the contact form, and I will respond promptly to schedule a suitable time for a call. I aim to make the process smooth and convenient for you.",
-  },
-  {
     question: "Can we have a one-to-one session?",
     answer:
       "Yes, absolutely! You can fill the contact form, and I can arrange a personalized session as soon as possible. I am committed to ensuring a productive and engaging discussion tailored to your needs.",
@@ -102,7 +97,7 @@ export const faqJson = [
 
 export const workProjectsJson = [
   {
-    projectName: "SuveraFresh",
+    projectName: "SuveraFresh - Android",
     startYear: "2025",
     techStack: [
       {
@@ -113,6 +108,9 @@ export const workProjectsJson = [
       },
       {
         name: "React Native",
+      },
+      {
+        name: "TanStack Query",
       },
       {
         name: "Native Paper",
@@ -128,11 +126,11 @@ export const workProjectsJson = [
     description: [
       {
         points:
-          "Developed a seamless ordering system using Redux Native, allowing users to purchase fresh raw meat, and seafood.",
+          "Developed a seamless ordering system using React Native, allowing users to purchase fresh raw meat, and seafood.",
       },
       {
         points:
-          "Implemented JWT Secure Token Refresh and Access Token mechanism to enhance user authentication and session management.",
+          "Implemented JWT Secure Token Refresh and Access Token mechanism to enhance user authentication.",
       },
       {
         points:
@@ -166,7 +164,7 @@ export const workProjectsJson = [
     liveUrl: "",
   },
   {
-    projectName: "Your Style",
+    projectName: "Your Style - Web",
     startYear: "2025",
     techStack: [
       {
@@ -179,13 +177,22 @@ export const workProjectsJson = [
         name: "ReactJS",
       },
       {
+        name: "TanStack Query",
+      },
+      {
         name: "Redux Toolkit",
+      },
+      {
+        name: "Node",
       },
       {
         name: "Express",
       },
       {
         name: "MongoDB",
+      },
+      {
+        name: "AWS",
       },
     ],
     title: "Cross-Platform Product Comparison Made Easy",
@@ -196,7 +203,7 @@ export const workProjectsJson = [
       },
       {
         points:
-          "Developed advanced sorting, filtering, and pagination, ensuring an optimized user experience when browsing products.",
+          "Developed advanced filtering and pagination, ensuring an optimized user experience when browsing products.",
       },
       {
         points:
@@ -209,6 +216,9 @@ export const workProjectsJson = [
       {
         points:
           "Upcoming updates include JWT-secured authentication for enhanced security and a wishlist feature for saving favorite products",
+      },
+      {
+        points: "Deployed backend on AWS with AWS Elasticbean Stalk.",
       },
     ],
     images: [
@@ -228,7 +238,7 @@ export const workProjectsJson = [
     liveUrl: "",
   },
   {
-    projectName: "Attendee",
+    projectName: "Attendee - Android",
     title: "Streamlining employee attendance management",
     startYear: "2024",
     techStack: [
@@ -243,6 +253,9 @@ export const workProjectsJson = [
       },
       {
         name: "Native Paper",
+      },
+      {
+        name: "TanStack Query",
       },
       {
         name: "Redux Toolkit",
@@ -296,7 +309,7 @@ export const workProjectsJson = [
     liveUrl: "",
   },
   {
-    projectName: "SuveraFresh",
+    projectName: "SuveraFresh - Web",
     startYear: "2024",
     techStack: [
       {
@@ -323,7 +336,7 @@ export const workProjectsJson = [
       },
       {
         points:
-          "Implemented JWT Secure Token Refresh and Access Token mechanism to enhance user authentication and session management.",
+          "Implemented JWT Secure Token Refresh and Access Token mechanism to enhance user authentication.",
       },
       {
         points:
@@ -350,51 +363,6 @@ export const workProjectsJson = [
       },
       {
         url: "/images/sf-web-04.png",
-      },
-    ],
-    liveUrl: "",
-  },
-
-  {
-    projectName: "Earnest Task Creator",
-    startYear: "2022",
-    title: "Simplify your to-do lists & task",
-    techStack: [
-      {
-        name: "Typescript",
-      },
-      {
-        name: "ReactJS",
-      },
-      {
-        name: "Redux Toolkit",
-      },
-    ],
-    description: [
-      {
-        points:
-          "Developed a to-do list application with CRUD functionality for managing tasks efficiently.",
-      },
-      {
-        points:
-          "Implemented Redux Toolkit for state management to ensure smooth updates and performance.",
-      },
-      {
-        points:
-          "Designed a fully responsive interface, providing a seamless experience across devices.",
-      },
-      {
-        points:
-          "Built with TypeScript to enhance code reliability and maintainability.",
-      },
-    ],
-
-    images: [
-      {
-        url: "/images/earnest-task.png",
-      },
-      {
-        url: "/images/earnest-task-validation.png",
       },
     ],
     liveUrl: "",

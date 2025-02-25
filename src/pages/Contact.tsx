@@ -1,9 +1,9 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { customTitleFAQJson } from "../utils/JSON";
 import CustomTitle from "../components/CustomTitle";
-import { PiHandWavingBold } from "react-icons/pi";
 import Nav from "../components/Nav";
 import { useEffect } from "react";
+import Info from "../components/Info";
 
 type Inputs = {
   fullname: string;
@@ -19,13 +19,16 @@ function Contact() {
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
+
   const onSubmit: SubmitHandler<Inputs> = () => {
     alert("Thank you contacting! Response time is typically around 24 hours");
     reset();
   };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="layout">
       <Nav />
@@ -33,30 +36,7 @@ function Contact() {
         <section className="flex flex-col gap-20 py-40">
           <CustomTitle items={customTitleFAQJson} />
           <div className="flex flex-row flex-wrap gap-10">
-            <div className="flex-1 faq_card p-10">
-              <div className="mb-10 text-center">
-                <h1 className="font-serif">
-                  Have any more questions or want to discuss on project?
-                </h1>
-              </div>
-              <div className="relative flex justify-center">
-                <img
-                  src="../images/tusharpic01.webp"
-                  alt="devxtushar image"
-                  className="profile"
-                />
-                <div className="flex flex-col gap-2 items-center btn_posi">
-                  <div>
-                    <button>
-                      <PiHandWavingBold size={18} /> Let's talk
-                    </button>
-                  </div>
-                  <span className="t6 font-bold text-black font-sans">
-                    *Response time is typically around 24h
-                  </span>
-                </div>
-              </div>
-            </div>
+            <Info />
             <div className="flex-1 flex flex-col gap-10">
               <div className="faq_card p-10">
                 <form
@@ -110,9 +90,15 @@ function Contact() {
                   </div>
                   <div>
                     <input
-                      {...register("msg")}
+                      {...register("msg", { required: true })}
                       placeholder="Enter Your Message"
+                      type="text"
                     />
+                    {errors.msg && (
+                      <span className="t5 text-gray-500">
+                        Message is required*
+                      </span>
+                    )}
                   </div>
                   <div>
                     <span className="block t5 font-bold">
