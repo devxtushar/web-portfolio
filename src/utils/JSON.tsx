@@ -89,11 +89,6 @@ export const faqJson = [
       "The quote pricing depends entirely on the project's complexity, scope, and specific requirements. I recommend scheduling a Google/Zoom Meet to discuss the details, where we can align on your needs and finalize a suitable pricing model.",
   },
   {
-    question: "When can we get on call?",
-    answer:
-      "You can send me your contact details through the contact form, and I will respond promptly to schedule a suitable time for a call. I aim to make the process smooth and convenient for you.",
-  },
-  {
     question: "Can we have a one-to-one session?",
     answer:
       "Yes, absolutely! You can fill the contact form, and I can arrange a personalized session as soon as possible. I am committed to ensuring a productive and engaging discussion tailored to your needs.",
