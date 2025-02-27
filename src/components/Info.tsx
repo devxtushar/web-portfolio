@@ -5,6 +5,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { PiHandWavingBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 function Info() {
   return (
@@ -22,11 +23,11 @@ function Info() {
             className="profile"
           />
           <div className="flex flex-col gap-2 items-center btn_posi">
-            <div>
+            <Link to="/contact">
               <button>
                 <PiHandWavingBold size={18} /> Let's talk
               </button>
-            </div>
+            </Link>
             <span className="t6 font-bold text-black font-sans">
               *Response time is typically around 24h
             </span>

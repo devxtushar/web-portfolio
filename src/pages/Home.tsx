@@ -22,11 +22,18 @@ function Home() {
               alt="avatar"
               className="avatar"
             />
-            <button style={{ background: "#010101", color: "white" }}>
-              <GoDotFill color="green" size={20} className="pt-1" />
-              Available for opportunities
-              <FaFileDownload className="pt-1 ml-2" />
-            </button>
+            <a
+              href="/pdfs/TusharMishraDevResume.pdf"
+              download="TusharMishraDevResume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button style={{ background: "#010101", color: "white" }}>
+                <GoDotFill color="green" size={20} className="pt-1" />
+                Available for opportunities
+                <FaFileDownload className="pt-1 ml-2" />
+              </button>
+            </a>
           </div>
           <div className="flex flex-col gap-5 ">
             <div className="flex font-serif flex-col items-center">
@@ -47,9 +54,16 @@ function Home() {
                 Let's Talk
               </button>
             </Link>
-            <button>
-              Download Resume <FiArrowUpRight size={15} />
-            </button>
+            <a
+              href="/pdfs/TusharMishraDevResume.pdf"
+              download="TusharMishraDevResume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>
+                Download Resume <FiArrowUpRight size={15} />
+              </button>
+            </a>
           </div>
         </section>
         <Works />
