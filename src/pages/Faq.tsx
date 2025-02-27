@@ -22,7 +22,10 @@ function Faq() {
                 <div
                   className="flex flex-row justify-between cursor-pointer"
                   onClick={() => {
-                    setSelectedFaq(i), setOpenModal(!openModal);
+                    setSelectedFaq(i),
+                      selectedFaq === i
+                        ? setOpenModal(!openModal)
+                        : setOpenModal(true);
                   }}
                 >
                   <h3>{question}</h3>
