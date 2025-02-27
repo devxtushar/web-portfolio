@@ -7,6 +7,8 @@ import Info from "../components/Info";
 
 function Faq() {
   const [selectedFaq, setSelectedFaq] = useState(0);
+  const [openModal, setOpenModal] = useState(true);
+
   return (
     <section id="faq" className="flex flex-col gap-20 py-40">
       <CustomTitle items={customTitleFAQJson} />
@@ -19,16 +21,18 @@ function Faq() {
               <div key={i} className="faq_card p-10">
                 <div
                   className="flex flex-row justify-between cursor-pointer"
-                  onClick={() => setSelectedFaq(i)}
+                  onClick={() => {
+                    setSelectedFaq(i), setOpenModal(!openModal);
+                  }}
                 >
                   <h3>{question}</h3>
-                  {selectedFaq === i ? (
+                  {openModal && selectedFaq === i ? (
                     <FaChevronUp size={20} className="cursor-pointer" />
                   ) : (
                     <FaChevronDown size={20} className="cursor-pointer" />
                   )}
                 </div>
-                {selectedFaq === i && (
+                {openModal && selectedFaq === i && (
                   <h4 className="text-gray-500 font-sans mt-5">{answer}</h4>
                 )}
               </div>
