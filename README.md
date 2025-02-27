@@ -1,5 +1,3 @@
-🚀 Excited to share my new portfolio! 🚀
-
 I’ve finally put together a personal portfolio showcasing my skills, work, and experience. I built this website using the following technologies:
 
 🔹 ReactJS  
