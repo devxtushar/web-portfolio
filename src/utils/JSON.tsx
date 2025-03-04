@@ -42,8 +42,10 @@ export const myExperienceJson = [
       { points: "Developed front-end using React Native and Redux Toolkit." },
       { points: "Managed backend with Node.js and MongoDB." },
       { points: "Improved user experience on SkillyCoders app." },
-      { points: "Educated students on programming and development." },
-      { points: "Integrated secure authentication and payment systems." },
+      {
+        points: "Integrated secure JWT authentication  mechanism",
+      },
+      { points: "Integrated Razorpay for seamless payment transactions." },
     ],
   },
   {
