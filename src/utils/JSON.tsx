@@ -24,9 +24,7 @@ export const myExperienceJson = [
     city: "Kanpur",
     country: "India",
     work: [
-      { points: "Developed scalable backend with Node.js and Express.js." },
       { points: "Created dynamic UI using React Native and NativeWind." },
-      { points: "Integrated Razorpay for seamless payment transactions." },
       { points: "Implemented Firebase for real-time notifications." },
       { points: "Enhanced security using JWT authentication." },
     ],
@@ -56,7 +54,7 @@ export const myExperienceJson = [
     city: "Gurugram",
     country: "India",
     work: [
-      { points: "Optimized React.js and Next.js apps for faster loading." },
+      { points: "Optimized React.js apps for faster loading." },
       { points: "Implemented scalable JWT authentication." },
       { points: "Designed reusable React Native components." },
       { points: "Built seamless pagination for large datasets." },
