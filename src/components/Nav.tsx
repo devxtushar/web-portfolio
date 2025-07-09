@@ -1,14 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { handleScroll } from "../utils/helperFn";
 
 export default function Nav() {
-  const handleScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   const handleBgScroll = () => {
     const nav = document.querySelector(".navul");
     if (nav) {
@@ -45,9 +39,9 @@ export default function Nav() {
         <Link to="/" className="navli navli_hide">
           <li onClick={() => handleScroll("faq")}>FAQ</li>
         </Link>
-        <Link to="/contact" className="navli navli_hide">
+        {/* <Link to="/contact" className="navli navli_hide">
           <li>Let's Talk</li>
-        </Link>
+        </Link> */}
       </ul>
     </nav>
   );

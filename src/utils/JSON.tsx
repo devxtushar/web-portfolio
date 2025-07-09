@@ -9,6 +9,11 @@ export const customTitleFAQJson = {
   title: "Frequently Asked Questions",
   subtitle: "Your answers await right here",
 };
+export const customTitleTalk = {
+  heading: "Some doubts",
+  title: "Frequently Asked Questions",
+  subtitle: "Your answers await right here",
+};
 export const customTitleExperienceJson = {
   heading: "My Experiences",
   title: "Where I've been employed",
@@ -81,17 +86,17 @@ export const faqJson = [
   {
     question: "Are you available to hire full time?",
     answer:
-      "Currently, I am working full-time but remain open to exciting opportunities. If you have a project or position that aligns with my expertise, feel free to reach out. We can explore the possibilities further!",
+      "Currently, I am working full-time but remain open to exciting opportunities. If you have a project or position that aligns with my expertise, feel free to reach out.",
   },
   {
     question: "How do your quote pricing works?",
     answer:
-      "The quote pricing depends entirely on the project's complexity, scope, and specific requirements. I recommend scheduling a Google/Zoom Meet to discuss the details, where we can align on your needs and finalize a suitable pricing model.",
+      "The quote pricing depends entirely on the project's complexity, scope, and specific requirements. I recommend scheduling a Google/Zoom Meet via emailing me on devxtushar@gmail.com to discuss the details.",
   },
   {
     question: "Can we have a one-to-one session?",
     answer:
-      "Yes, absolutely! You can fill the contact form, and I can arrange a personalized session as soon as possible. I am committed to ensuring a productive and engaging discussion tailored to your needs.",
+      "Yes, absolutely! Kindly email me at devxtushar@gmail.com and I can arrange a personalized session as soon as possible. I am committed to ensuring a productive and engaging discussion tailored to your needs.",
   },
 ];
 

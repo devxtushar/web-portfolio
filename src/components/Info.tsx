@@ -5,7 +5,6 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { PiHandWavingBold } from "react-icons/pi";
-import { Link } from "react-router-dom";
 
 function Info() {
   return (
@@ -23,13 +22,11 @@ function Info() {
             className="profile"
           />
           <div className="flex flex-col gap-2 items-center btn_posi">
-            <Link to="/contact">
-              <button>
-                <PiHandWavingBold size={18} /> Let's talk
-              </button>
-            </Link>
+            <button>
+              <PiHandWavingBold size={18} /> Let's talk
+            </button>
             <span className="t6 font-bold text-black font-sans">
-              *Response time is typically around 24h
+              *Response time is typically around 24h via email.
             </span>
           </div>
         </div>
@@ -56,7 +53,7 @@ function Info() {
               <span className="t3">devxtushar@gmail.com</span>
             </li>
           </ul>
-          <h3 className="t2 font-serif ">Social Handle :</h3>
+          <h3 className="t2 font-serif ">Social Handle </h3>
 
           <ul className="flex flex-row gap-10">
             <li>
