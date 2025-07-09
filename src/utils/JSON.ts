@@ -155,14 +155,20 @@ export const workProjectsJson: Projects[] = [
 
     images: [
       {
-        url: "/images/sf-01.png",
+        url: "/images/gn1.png",
       },
 
       {
-        url: "/images/sf-03.png",
+        url: "/images/gn2.png",
       },
       {
-        url: "/images/sf-04.png",
+        url: "/images/gn6.png",
+      },
+      {
+        url: "/images/gn3.png",
+      },
+      {
+        url: "/images/gn4.png",
       },
     ],
   },
