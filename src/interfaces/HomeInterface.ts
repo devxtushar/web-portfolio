@@ -3,6 +3,9 @@ export interface CustomTitle {
   title: string;
   subtitle: string;
 }
+export interface CustomTitleProps {
+  items: CustomTitle;
+}
 
 export interface Projects {
   projectName: string;
