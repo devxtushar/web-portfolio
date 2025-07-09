@@ -159,10 +159,10 @@ export const workProjectsJson: Projects[] = [
       },
 
       {
-        url: "/images/gn2.png",
+        url: "/images/gn6.png",
       },
       {
-        url: "/images/gn6.png",
+        url: "/images/gn5.png",
       },
       {
         url: "/images/gn3.png",
