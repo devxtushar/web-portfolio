@@ -108,11 +108,70 @@ export const faqJson: FAQ[] = [
 
 export const workProjectsJson: Projects[] = [
   {
+    projectName: "GetNow - Android",
+    title: "Get online groceries, food and more delivered in just minutes",
+    startYear: "2025",
+    type: "Public",
+    liveUrl: "https://github.com/devxtushar/GetNow-app",
+    techStack: [
+      {
+        name: "Typescript",
+      },
+      {
+        name: "NativeWind",
+      },
+      {
+        name: "React Native",
+      },
+      {
+        name: "React Navigation",
+      },
+      {
+        name: "Redux Toolkit",
+      },
+    ],
+    description: [
+      {
+        points:
+          "GetNow brings your favorite local stores online—groceries, food, medicines, and more delivered in just minutes.",
+      },
+      {
+        points:
+          "Designed and implemented intuitive product and product detail screens with a clean and responsive UI using NativeWind and Native Paper.",
+      },
+      {
+        points:
+          "Developed a robust cart and order management system using Redux Toolkit.",
+      },
+      {
+        points:
+          "Implemented an order tracking flow: after placing an order, users are guided through real-time status updates from 'Preparing' to 'Out for Delivery', and finally to 'Delivered', each stage transitioning automatically every 30 seconds.",
+      },
+      {
+        points:
+          "Managed all application state, including cart, order flow, and UI transitions, efficiently using Redux Toolkit.",
+      },
+    ],
+
+    images: [
+      {
+        url: "/images/sf-01.png",
+      },
+
+      {
+        url: "/images/sf-03.png",
+      },
+      {
+        url: "/images/sf-04.png",
+      },
+    ],
+  },
+  {
     projectName: "SuveraFresh - Android",
     title: "Fresh Raw Non-Veg Delivered to Your Doorstep",
     startYear: "2025",
     type: "Private",
-    liveUrl: "",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.suverafresh",
     techStack: [
       {
         name: "Typescript",
@@ -180,7 +239,7 @@ export const workProjectsJson: Projects[] = [
     title: "Cross-Platform Product Comparison Made Easy",
     startYear: "2025",
     type: "Public",
-    liveUrl: "",
+    liveUrl: "https://github.com/devxtushar/your-style-web",
 
     techStack: [
       {
@@ -228,13 +287,6 @@ export const workProjectsJson: Projects[] = [
         points:
           "Leveraged React Router DOM for smooth navigation, enhancing usability and engagement.",
       },
-      {
-        points:
-          "Upcoming updates include JWT-secured authentication for enhanced security and a wishlist feature for saving favorite products",
-      },
-      {
-        points: "Deployed backend on AWS with AWS Elasticbean Stalk.",
-      },
     ],
     images: [
       {
@@ -256,7 +308,7 @@ export const workProjectsJson: Projects[] = [
     title: "Streamlining employee attendance management",
     startYear: "2024",
     type: "Public",
-    liveUrl: "",
+    liveUrl: "https://github.com/devxtushar/attendee-app",
     techStack: [
       {
         name: "Typescript",
