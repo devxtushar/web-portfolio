@@ -39,9 +39,6 @@ export default function Nav() {
         <Link to="/" className="navli navli_hide">
           <li onClick={() => handleScroll("faq")}>FAQ</li>
         </Link>
-        {/* <Link to="/contact" className="navli navli_hide">
-          <li>Let's Talk</li>
-        </Link> */}
       </ul>
     </nav>
   );
