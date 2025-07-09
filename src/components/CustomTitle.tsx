@@ -1,4 +1,4 @@
-import { CustomTitleProps } from "../interfaces/common";
+import { CustomTitleProps } from "../interfaces/HomeInterface";
 
 function CustomTitle(props: CustomTitleProps) {
   const { heading, title, subtitle } = props.items;

@@ -3,8 +3,16 @@ import CustomButton from "./CustomButton";
 import Slider from "@ant-design/react-slick";
 
 function WorkCard(props: any) {
-  const { projectName, startYear, title, description, images, techStack } =
-    props.items;
+  const {
+    projectName,
+    startYear,
+    title,
+    description,
+    images,
+    techStack,
+    type,
+    liveUrl,
+  } = props.items;
 
   var settings = {
     dots: false,
@@ -32,7 +40,10 @@ function WorkCard(props: any) {
       >
         <div className="flex flex-col gap-2">
           <span className="t4 uppercase font-mono tracking-widest">
-            {projectName} . {startYear}
+            {projectName} {startYear}.{" "}
+            <a href={liveUrl} target="_blank">
+              <span className="text-green-200">{type}</span>
+            </a>
           </span>
           <h1 className="font-serif">{title}</h1>
         </div>
@@ -42,7 +53,7 @@ function WorkCard(props: any) {
             const { points } = items;
             return (
               <li key={i} className="t3 font-sans flex flex-row gap-4 ">
-                <AiOutlineCheckCircle className="mt-2" /> {points}
+                <AiOutlineCheckCircle className="mt-2" size={15} /> {points}
               </li>
             );
           })}
@@ -54,13 +65,6 @@ function WorkCard(props: any) {
               return <CustomButton key={i} name={name} />;
             })}
           </Slider>
-        </div>
-        <div className="flex-1 flex items-end pb-10 center_section">
-          {/* <a href={liveUrl} target="_blank">
-            <button>
-              Live Preview <FiArrowUpRight size={15} />
-            </button>
-          </a> */}
         </div>
       </section>
       <section className="flex-1 flex justify-end center_section">
