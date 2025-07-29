@@ -157,7 +157,6 @@ export const workProjectsJson: Projects[] = [
       {
         url: "/images/gn1.png",
       },
-
       {
         url: "/images/gn6.png",
       },
