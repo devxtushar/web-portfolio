@@ -23,8 +23,8 @@ function Home() {
               className="avatar"
             />
             <a
-              href="/pdfs/Tushar_Mishra_Dev_Resume.pdf"
-              download="Tushar_Mishra_Dev_Resume.pdf"
+              href="/pdfs/tushar_dev_resume.pdf"
+              download="tushar_dev_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -55,8 +55,8 @@ function Home() {
               </button>
             </Link>
             <a
-              href="/pdfs/Tushar_Mishra_Dev_Resume.pdf"
-              download="Tushar_Mishra_Dev_Resume.pdf"
+              href="/pdfs/tushar_dev_resume.pdf"
+              download="tushar_dev_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

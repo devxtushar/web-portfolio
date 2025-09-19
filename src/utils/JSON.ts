@@ -1,21 +1,33 @@
-export const customTitleWorks = {
+import {
+  CustomTitle,
+  Experience,
+  FAQ,
+  Projects,
+} from "../interfaces/HomeInterface";
+
+export const customTitleWorks: CustomTitle = {
   heading: "Curated Work",
-  title: "Featured Live Projects",
+  title: "Featured Projects",
   subtitle:
     "Featuring robust solutions that deliver seamless user experiences and innovative functionality",
 };
-export const customTitleFAQJson = {
+export const customTitleFAQJson: CustomTitle = {
   heading: "Some doubts",
   title: "Frequently Asked Questions",
   subtitle: "Your answers await right here",
 };
-export const customTitleExperienceJson = {
+export const customTitleTalk: CustomTitle = {
+  heading: "Some doubts",
+  title: "Frequently Asked Questions",
+  subtitle: "Your answers await right here",
+};
+export const customTitleExperienceJson: CustomTitle = {
   heading: "My Experiences",
   title: "Where I've been employed",
   subtitle: "",
 };
 
-export const myExperienceJson = [
+export const myExperienceJson: Experience[] = [
   {
     designation: "Software Engineer",
     company: "SuveraFresh",
@@ -43,7 +55,6 @@ export const myExperienceJson = [
       {
         points: "Integrated secure JWT authentication  mechanism",
       },
-      { points: "Integrated Razorpay for seamless payment transactions." },
     ],
   },
   {
@@ -77,28 +88,95 @@ export const myExperienceJson = [
   },
 ];
 
-export const faqJson = [
+export const faqJson: FAQ[] = [
   {
     question: "Are you available to hire full time?",
     answer:
-      "Currently, I am working full-time but remain open to exciting opportunities. If you have a project or position that aligns with my expertise, feel free to reach out. We can explore the possibilities further!",
+      "Currently, I am working full-time but remain open to exciting opportunities. If you have a project or position that aligns with my expertise, feel free to reach out.",
   },
   {
-    question: "How do your quote pricing works?",
+    question: "In which technologies do you work?",
     answer:
-      "The quote pricing depends entirely on the project's complexity, scope, and specific requirements. I recommend scheduling a Google/Zoom Meet to discuss the details, where we can align on your needs and finalize a suitable pricing model.",
+      "I work on both web and mobile applications. For web development, I use React.js, and for Android apps, I use React Native.",
   },
   {
     question: "Can we have a one-to-one session?",
     answer:
-      "Yes, absolutely! You can fill the contact form, and I can arrange a personalized session as soon as possible. I am committed to ensuring a productive and engaging discussion tailored to your needs.",
+      "Yes, absolutely! Kindly email me at devxtushar@gmail.com and I can arrange a personalized session as soon as possible. I am committed to ensuring a productive and engaging discussion tailored to your needs.",
   },
 ];
 
-export const workProjectsJson = [
+export const workProjectsJson: Projects[] = [
+  {
+    projectName: "GetNow - Android",
+    title: "Get online groceries, food and more delivered in just minutes",
+    startYear: "2025",
+    type: "Public",
+    liveUrl: "https://github.com/devxtushar/GetNow-app",
+    techStack: [
+      {
+        name: "Typescript",
+      },
+      {
+        name: "NativeWind",
+      },
+      {
+        name: "React Native",
+      },
+      {
+        name: "React Navigation",
+      },
+      {
+        name: "Redux Toolkit",
+      },
+    ],
+    description: [
+      {
+        points:
+          "GetNow brings your favorite local stores online—groceries, food, medicines, and more delivered in just minutes.",
+      },
+      {
+        points:
+          "Designed and implemented intuitive product and product detail screens with a clean and responsive UI using NativeWind and Native Paper.",
+      },
+      {
+        points:
+          "Developed a robust cart and order management system using Redux Toolkit.",
+      },
+      {
+        points:
+          "Implemented an order tracking flow: after placing an order, users are guided through real-time status updates from 'Preparing' to 'Out for Delivery', and finally to 'Delivered', each stage transitioning automatically every 30 seconds.",
+      },
+      {
+        points:
+          "Managed all application state, including cart, order flow, and UI transitions, efficiently using Redux Toolkit.",
+      },
+    ],
+
+    images: [
+      {
+        url: "/images/gn1.png",
+      },
+      {
+        url: "/images/gn6.png",
+      },
+      {
+        url: "/images/gn5.png",
+      },
+      {
+        url: "/images/gn3.png",
+      },
+      {
+        url: "/images/gn4.png",
+      },
+    ],
+  },
   {
     projectName: "SuveraFresh - Android",
+    title: "Fresh Raw Non-Veg Delivered to Your Doorstep",
     startYear: "2025",
+    type: "Private",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.suverafresh",
     techStack: [
       {
         name: "Typescript",
@@ -122,7 +200,6 @@ export const workProjectsJson = [
         name: "Firebase",
       },
     ],
-    title: "Fresh Raw Non-Veg Delivered to Your Doorstep",
     description: [
       {
         points:
@@ -161,11 +238,14 @@ export const workProjectsJson = [
         url: "/images/sf-04.png",
       },
     ],
-    liveUrl: "",
   },
   {
     projectName: "Your Style - Web",
+    title: "Cross-Platform Product Comparison Made Easy",
     startYear: "2025",
+    type: "Public",
+    liveUrl: "https://github.com/devxtushar/your-style-web",
+
     techStack: [
       {
         name: "Typescript",
@@ -195,7 +275,6 @@ export const workProjectsJson = [
         name: "AWS",
       },
     ],
-    title: "Cross-Platform Product Comparison Made Easy",
     description: [
       {
         points:
@@ -213,13 +292,6 @@ export const workProjectsJson = [
         points:
           "Leveraged React Router DOM for smooth navigation, enhancing usability and engagement.",
       },
-      {
-        points:
-          "Upcoming updates include JWT-secured authentication for enhanced security and a wishlist feature for saving favorite products",
-      },
-      {
-        points: "Deployed backend on AWS with AWS Elasticbean Stalk.",
-      },
     ],
     images: [
       {
@@ -235,12 +307,13 @@ export const workProjectsJson = [
         url: "/images/ys-04.png",
       },
     ],
-    liveUrl: "",
   },
   {
     projectName: "Attendee - Android",
     title: "Streamlining employee attendance management",
     startYear: "2024",
+    type: "Public",
+    liveUrl: "https://github.com/devxtushar/attendee-app",
     techStack: [
       {
         name: "Typescript",
@@ -306,65 +379,5 @@ export const workProjectsJson = [
         url: "/images/hr-verify-removebg.png",
       },
     ],
-    liveUrl: "",
-  },
-  {
-    projectName: "SuveraFresh - Web",
-    startYear: "2024",
-    techStack: [
-      {
-        name: "Typescript",
-      },
-      {
-        name: "Tailwind CSS",
-      },
-      {
-        name: "ReactJS",
-      },
-      {
-        name: "MUI",
-      },
-      {
-        name: "Redux Toolkit",
-      },
-    ],
-    title: "Fresh Raw Non-Veg Delivered to Your Doorstep",
-    description: [
-      {
-        points:
-          "Developed a seamless ordering system using ReactJS, allowing users to browse and purchase fresh raw meat and seafood.",
-      },
-      {
-        points:
-          "Implemented JWT Secure Token Refresh and Access Token mechanism to enhance user authentication.",
-      },
-      {
-        points:
-          "Designed a visually appealing and responsive UI using Tailwind CSS and MUI, ensuring a smooth user experience across devices.",
-      },
-      {
-        points:
-          "Developed a full-featured cart functionality, allowing users to add, update, and remove items seamlessly before checkout.",
-      },
-      {
-        points:
-          "Utilized React Router Dom for intuitive and user-friendly web navigation.",
-      },
-    ],
-    images: [
-      {
-        url: "/images/sf-web-01.png",
-      },
-      {
-        url: "/images/sf-web-02.png",
-      },
-      {
-        url: "/images/sf-web-03.png",
-      },
-      {
-        url: "/images/sf-web-04.png",
-      },
-    ],
-    liveUrl: "",
   },
 ];

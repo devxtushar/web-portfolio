@@ -1,8 +1,8 @@
 import CustomTitle from "../components/CustomTitle";
 import { customTitleExperienceJson, myExperienceJson } from "../utils/JSON";
 import { GoDotFill } from "react-icons/go";
-import { FiArrowUpRight } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { FaChevronDown } from "react-icons/fa";
+import { handleScroll } from "../utils/helperFn";
 
 function Experience() {
   return (
@@ -10,7 +10,7 @@ function Experience() {
       <div className="experience">
         <CustomTitle items={customTitleExperienceJson} />
         <div>
-          {myExperienceJson.map((items, i) => {
+          {myExperienceJson.map((items, i: number) => {
             const { designation, company, join, leave, city, country, work } =
               items;
             return (
@@ -62,12 +62,10 @@ function Experience() {
           </h4>
         </div>
         <div className="flex-1  flex justify-end items-center">
-          <Link to="/contact">
-            <button>
-              Contact Me
-              <FiArrowUpRight size={15} />
-            </button>
-          </Link>
+          <button onClick={() => handleScroll("faq")}>
+            Contact Me
+            <FaChevronDown size={15} />
+          </button>
         </div>
       </div>
     </section>
